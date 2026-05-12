@@ -1,0 +1,252 @@
+[
+  {
+    "productId": "ct-001",
+    "slug": "camisa-brasil-ii-2026-azul",
+    "target": "Camisa Brasil II 2026 Azul - Torcedor Masculina",
+    "sourceStatus": "reference_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-001/ct-001__camisa-brasil-ii-2026-azul__front__public-reference__v1.webp",
+      "/assets/products/ct-001/ct-001__camisa-brasil-ii-2026-azul__back__public-reference__v1.webp",
+      "/assets/products/ct-001/ct-001__camisa-brasil-ii-2026-azul__detail__public-reference__v1.webp"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-002",
+    "slug": "camisa-brasil-i-2026-amarela",
+    "target": "Camisa Brasil I 2026 Amarela - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial_official_retail_reference",
+    "currentImages": [
+      "/assets/products/ct-002/ct-002__camisa-brasil-i-2026-amarela__front__public-reference__v1.jpg",
+      "/assets/products/ct-002/ct-002__camisa-brasil-i-2026-amarela__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-003",
+    "slug": "camisa-flamengo-i-2026",
+    "target": "Camisa Flamengo I 2026 - Torcedor Masculina",
+    "sourceStatus": "reference_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-003/ct-003__camisa-flamengo-i-2026__front__public-reference__v1.webp"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-004",
+    "slug": "camisa-flamengo-ii-feminina-2026",
+    "target": "Camisa Flamengo II 2026 - Torcedor Feminina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-004/ct-004__camisa-flamengo-ii-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-004/ct-004__camisa-flamengo-ii-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-005",
+    "slug": "camisa-sao-paulo-iii-2026-preta",
+    "target": "Camisa Sao Paulo III 2026 Preta - Torcedor Masculina",
+    "sourceStatus": "reference_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-005/ct-005__camisa-sao-paulo-iii-2026-preta__front__public-reference__v1.webp"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-006",
+    "slug": "camisa-sao-paulo-i-feminina-2026",
+    "target": "Camisa Sao Paulo I 2026 - Torcedor Feminina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-006/ct-006__camisa-sao-paulo-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-006/ct-006__camisa-sao-paulo-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-007",
+    "slug": "camisa-palmeiras-i-feminina-2026",
+    "target": "Camisa Palmeiras I 2026 Verde - Torcedor Feminina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-007/ct-007__camisa-palmeiras-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-007/ct-007__camisa-palmeiras-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-008",
+    "slug": "camisa-corinthians-i-feminina-2026",
+    "target": "Camisa Corinthians I 2026 - Torcedor Feminina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-008/ct-008__camisa-corinthians-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-008/ct-008__camisa-corinthians-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-009",
+    "slug": "camisa-fluminense-i-feminina-2026",
+    "target": "Camisa Fluminense I 2026 - Torcedor Feminina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-009/ct-009__camisa-fluminense-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-009/ct-009__camisa-fluminense-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-010",
+    "slug": "camisa-gremio-i-tricolor-2026",
+    "target": "Camisa Gremio I Tricolor 2026 - Torcedor Masculina",
+    "sourceStatus": "reference_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-010/ct-010__camisa-gremio-i-tricolor-2026__front__public-reference__v1.webp"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-011",
+    "slug": "kit-internacional-infantil-2026",
+    "target": "Kit Internacional Infantil 2026",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-011/ct-011__kit-internacional-infantil-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-012",
+    "slug": "camisa-napoli-i-2025",
+    "target": "Camisa Napoli I 2025 Azul - Torcedor Masculina",
+    "sourceStatus": "reference_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-012/ct-012__camisa-napoli-i-2025__front__public-reference__v1.jpeg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-013",
+    "slug": "camisa-real-madrid-iii-2026-azul",
+    "target": "Camisa Real Madrid III 2026 Azul - Torcedor Masculina",
+    "sourceStatus": "reference_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-013/ct-013__camisa-real-madrid-iii-2026-azul__front__public-reference__v1.webp"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-014",
+    "slug": "camisa-barcelona-i-2026",
+    "target": "Camisa Barcelona I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-014/ct-014__camisa-barcelona-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-015",
+    "slug": "camisa-manchester-city-i-2026",
+    "target": "Camisa Manchester City I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-015/ct-015__camisa-manchester-city-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-016",
+    "slug": "camisa-birmingham-i-2026",
+    "target": "Camisa Birmingham I 2026 Azul - Torcedor Masculina",
+    "sourceStatus": "pending_public_source",
+    "currentImages": [
+      "/api/product-art/camisa-birmingham-i-2026"
+    ],
+    "notes": "Mantido com SVG local porque a fonte publica correspondente bloqueou download ou nao foi confirmada."
+  },
+  {
+    "productId": "ct-017",
+    "slug": "camisa-psg-i-2026",
+    "target": "Camisa Paris I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-017/ct-017__camisa-psg-i-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-017/ct-017__camisa-psg-i-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-018",
+    "slug": "camisa-argentina-i-2026",
+    "target": "Camisa Argentina I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-018/ct-018__camisa-argentina-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-019",
+    "slug": "camisa-japao-i-2026",
+    "target": "Camisa Japao I 2026 Azul - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-019/ct-019__camisa-japao-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-020",
+    "slug": "camisa-al-hilal-i-2026",
+    "target": "Camisa Al-Hilal I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-020/ct-020__camisa-al-hilal-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-021",
+    "slug": "camisa-al-nassr-i-2026",
+    "target": "Camisa Al-Nassr I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-021/ct-021__camisa-al-nassr-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-022",
+    "slug": "camisa-inter-miami-i-2026",
+    "target": "Camisa Inter Miami I 2026 Rosa - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-022/ct-022__camisa-inter-miami-i-2026__front__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-023",
+    "slug": "camisa-portugal-i-2026",
+    "target": "Camisa Portugal I 2026 - Torcedor Masculina",
+    "sourceStatus": "alternate_public_page_noncommercial",
+    "currentImages": [
+      "/assets/products/ct-023/ct-023__camisa-portugal-i-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-023/ct-023__camisa-portugal-i-2026__back__public-reference__v1.jpg"
+    ],
+    "notes": "Imagem importada para prototipo local sem fins comerciais; revisar licenca antes de uso comercial."
+  },
+  {
+    "productId": "ct-024",
+    "slug": "camisa-tailândia-especial-azul",
+    "target": "Camisa Central da Tailândia Especial Azul",
+    "sourceStatus": "owned_generated_asset",
+    "currentImages": [
+      "/api/product-art/camisa-tailândia-especial-azul"
+    ],
+    "notes": "Produto autoral; continua usando asset SVG local gerado pelo projeto."
+  }
+]

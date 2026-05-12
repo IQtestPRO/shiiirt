@@ -1,0 +1,1038 @@
+[
+  {
+    "id": "ct-001",
+    "slug": "camisa-brasil-ii-2026-azul",
+    "name": "Camisa Brasil II 2026 Azul - Torcedor Masculina",
+    "category": "selecoes",
+    "subcategory": "Americas",
+    "club": "Brasil",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 299.9,
+    "price": 199.9,
+    "discount": 33,
+    "installments": "2x de R$ 99,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-001/ct-001__camisa-brasil-ii-2026-azul__front__public-reference__v1.webp",
+      "/assets/products/ct-001/ct-001__camisa-brasil-ii-2026-azul__back__public-reference__v1.webp",
+      "/assets/products/ct-001/ct-001__camisa-brasil-ii-2026-azul__detail__public-reference__v1.webp"
+    ],
+    "description": "Modelo torcedor em azul intenso, com caimento leve e acabamento esportivo para uso casual ou dia de jogo.",
+    "tags": [
+      "brasil",
+      "selecao",
+      "azul",
+      "pronta entrega",
+      "personalizavel",
+      "copa"
+    ],
+    "related": [
+      "camisa-brasil-i-2026-amarela",
+      "camisa-argentina-i-2026",
+      "camisa-japao-i-2026"
+    ],
+    "colors": [
+      "#1F5FD4",
+      "#F6D34A",
+      "#2E9F5B"
+    ]
+  },
+  {
+    "id": "ct-002",
+    "slug": "camisa-brasil-i-2026-amarela",
+    "name": "Camisa Brasil I 2026 Amarela - Torcedor Masculina",
+    "category": "pronta-entrega",
+    "subcategory": "Selecoes",
+    "club": "Brasil",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 259.99,
+    "price": 159.99,
+    "discount": 38,
+    "installments": "2x de R$ 80,00 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": false,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-002/ct-002__camisa-brasil-i-2026-amarela__front__public-reference__v1.jpg",
+      "/assets/products/ct-002/ct-002__camisa-brasil-i-2026-amarela__back__public-reference__v1.jpg"
+    ],
+    "description": "Amarela classica com detalhes verdes e tecido respiravel para quem quer a camisa pronta para envio.",
+    "tags": [
+      "brasil",
+      "selecao",
+      "amarela",
+      "pronta entrega",
+      "promocao"
+    ],
+    "related": [
+      "camisa-brasil-ii-2026-azul",
+      "camisa-argentina-i-2026"
+    ],
+    "colors": [
+      "#F5D13D",
+      "#148044",
+      "#1F5FD4"
+    ]
+  },
+  {
+    "id": "ct-003",
+    "slug": "camisa-flamengo-i-2026",
+    "name": "Camisa Flamengo I 2026 - Torcedor Masculina",
+    "category": "brasileirao",
+    "subcategory": "Rio de Janeiro",
+    "club": "Flamengo",
+    "league": "Brasileirao",
+    "gender": "masculino",
+    "oldPrice": 289.9,
+    "price": 209.9,
+    "discount": 28,
+    "installments": "2x de R$ 104,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-003/ct-003__camisa-flamengo-i-2026__front__public-reference__v1.webp"
+    ],
+    "description": "Listras rubro-negras em leitura moderna, com gola confortavel e opcoes de personalizacao.",
+    "tags": [
+      "flamengo",
+      "brasileirao",
+      "rio de janeiro",
+      "personalizavel",
+      "mais vendidos"
+    ],
+    "related": [
+      "camisa-flamengo-ii-feminina-2026",
+      "camisa-fluminense-i-feminina-2026"
+    ],
+    "colors": [
+      "#111111",
+      "#D41D2D",
+      "#F2F4F7"
+    ]
+  },
+  {
+    "id": "ct-004",
+    "slug": "camisa-flamengo-ii-feminina-2026",
+    "name": "Camisa Flamengo II 2026 - Torcedor Feminina",
+    "category": "femininas",
+    "subcategory": "Brasileirao",
+    "club": "Flamengo",
+    "league": "Brasileirao Feminino",
+    "gender": "feminino",
+    "oldPrice": 0,
+    "price": 189.9,
+    "discount": 0,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-004/ct-004__camisa-flamengo-ii-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-004/ct-004__camisa-flamengo-ii-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Base clara com detalhes rubro-negros e modelagem feminina confortavel.",
+    "tags": [
+      "flamengo",
+      "feminina",
+      "brasileirao",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-flamengo-i-2026",
+      "camisa-sao-paulo-i-feminina-2026"
+    ],
+    "colors": [
+      "#FFFFFF",
+      "#D41D2D",
+      "#111111"
+    ]
+  },
+  {
+    "id": "ct-005",
+    "slug": "camisa-sao-paulo-iii-2026-preta",
+    "name": "Camisa Sao Paulo III 2026 Preta - Torcedor Masculina",
+    "category": "pronta-entrega",
+    "subcategory": "Sao Paulo",
+    "club": "Sao Paulo",
+    "league": "Brasileirao",
+    "gender": "masculino",
+    "oldPrice": 269.9,
+    "price": 189.9,
+    "discount": 30,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "G"
+    ],
+    "customizable": false,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-005/ct-005__camisa-sao-paulo-iii-2026-preta__front__public-reference__v1.webp"
+    ],
+    "description": "Versao escura comemorativa com faixas tricolores discretas e estoque limitado.",
+    "tags": [
+      "sao paulo",
+      "brasileirao",
+      "preta",
+      "pronta entrega",
+      "promocao"
+    ],
+    "related": [
+      "camisa-sao-paulo-i-feminina-2026",
+      "camisa-palmeiras-i-feminina-2026"
+    ],
+    "colors": [
+      "#161616",
+      "#FFFFFF",
+      "#D82731"
+    ]
+  },
+  {
+    "id": "ct-006",
+    "slug": "camisa-sao-paulo-i-feminina-2026",
+    "name": "Camisa Sao Paulo I 2026 - Torcedor Feminina",
+    "category": "femininas",
+    "subcategory": "Brasileirao",
+    "club": "Sao Paulo",
+    "league": "Brasileirao Feminino",
+    "gender": "feminino",
+    "oldPrice": 0,
+    "price": 189.9,
+    "discount": 0,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-006/ct-006__camisa-sao-paulo-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-006/ct-006__camisa-sao-paulo-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Camisa branca com detalhes tricolores e modelagem pensada para uso diario.",
+    "tags": [
+      "sao paulo",
+      "feminina",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-sao-paulo-iii-2026-preta",
+      "camisa-palmeiras-i-feminina-2026"
+    ],
+    "colors": [
+      "#FFFFFF",
+      "#D82731",
+      "#111111"
+    ]
+  },
+  {
+    "id": "ct-007",
+    "slug": "camisa-palmeiras-i-feminina-2026",
+    "name": "Camisa Palmeiras I 2026 Verde - Torcedor Feminina",
+    "category": "femininas",
+    "subcategory": "Brasileirao",
+    "club": "Palmeiras",
+    "league": "Brasileirao Feminino",
+    "gender": "feminino",
+    "oldPrice": 0,
+    "price": 189.9,
+    "discount": 0,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-007/ct-007__camisa-palmeiras-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-007/ct-007__camisa-palmeiras-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Verde profundo com acabamento limpo e toque macio para torcer com conforto.",
+    "tags": [
+      "palmeiras",
+      "feminina",
+      "brasileirao",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-corinthians-i-feminina-2026",
+      "camisa-sao-paulo-i-feminina-2026"
+    ],
+    "colors": [
+      "#0B7A42",
+      "#FFFFFF",
+      "#DDE7D8"
+    ]
+  },
+  {
+    "id": "ct-008",
+    "slug": "camisa-corinthians-i-feminina-2026",
+    "name": "Camisa Corinthians I 2026 - Torcedor Feminina",
+    "category": "femininas",
+    "subcategory": "Brasileirao",
+    "club": "Corinthians",
+    "league": "Brasileirao Feminino",
+    "gender": "feminino",
+    "oldPrice": 0,
+    "price": 189.9,
+    "discount": 0,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-008/ct-008__camisa-corinthians-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-008/ct-008__camisa-corinthians-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Preto e branco em desenho elegante, com opcao de nome e numero.",
+    "tags": [
+      "corinthians",
+      "feminina",
+      "brasileirao",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-palmeiras-i-feminina-2026",
+      "camisa-sao-paulo-i-feminina-2026"
+    ],
+    "colors": [
+      "#F7F7F7",
+      "#111111",
+      "#C7C7C7"
+    ]
+  },
+  {
+    "id": "ct-009",
+    "slug": "camisa-fluminense-i-feminina-2026",
+    "name": "Camisa Fluminense I 2026 - Torcedor Feminina",
+    "category": "femininas",
+    "subcategory": "Brasileirao",
+    "club": "Fluminense",
+    "league": "Brasileirao Feminino",
+    "gender": "feminino",
+    "oldPrice": 0,
+    "price": 189.9,
+    "discount": 0,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-009/ct-009__camisa-fluminense-i-feminina-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-009/ct-009__camisa-fluminense-i-feminina-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Tricolor vinho, verde e branco com visual classico e refinado.",
+    "tags": [
+      "fluminense",
+      "feminina",
+      "rio de janeiro"
+    ],
+    "related": [
+      "camisa-flamengo-ii-feminina-2026",
+      "camisa-flamengo-i-2026"
+    ],
+    "colors": [
+      "#7A1732",
+      "#1F7A4D",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-010",
+    "slug": "camisa-gremio-i-tricolor-2026",
+    "name": "Camisa Gremio I Tricolor 2026 - Torcedor Masculina",
+    "category": "brasileirao",
+    "subcategory": "Sul",
+    "club": "Gremio",
+    "league": "Brasileirao",
+    "gender": "masculino",
+    "oldPrice": 259.9,
+    "price": 169.9,
+    "discount": 35,
+    "installments": "2x de R$ 84,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "M"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-010/ct-010__camisa-gremio-i-tricolor-2026__front__public-reference__v1.webp"
+    ],
+    "description": "Tricolor azul, preto e branco com estoque de pronta entrega e visual sem excesso.",
+    "tags": [
+      "gremio",
+      "sul",
+      "brasileirao",
+      "pronta entrega",
+      "personalizavel"
+    ],
+    "related": [
+      "kit-internacional-infantil-2026",
+      "camisa-napoli-i-2025"
+    ],
+    "colors": [
+      "#0E8BD3",
+      "#111111",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-011",
+    "slug": "kit-internacional-infantil-2026",
+    "name": "Kit Internacional Infantil 2026",
+    "category": "infantil",
+    "subcategory": "Sul",
+    "club": "Internacional",
+    "league": "Brasileirao",
+    "gender": "infantil",
+    "oldPrice": 269.9,
+    "price": 169.9,
+    "discount": 37,
+    "installments": "2x de R$ 84,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "22 (6-7 Anos)",
+      "24 (8-9 Anos)",
+      "26 (10-11 Anos)"
+    ],
+    "customizable": false,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-011/ct-011__kit-internacional-infantil-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Kit infantil com camisa e short em vermelho vivo, ideal para presente.",
+    "tags": [
+      "internacional",
+      "infantil",
+      "kit",
+      "pronta entrega"
+    ],
+    "related": [
+      "camisa-gremio-i-tricolor-2026",
+      "camisa-brasil-i-2026-amarela"
+    ],
+    "colors": [
+      "#D71920",
+      "#FFFFFF",
+      "#86151A"
+    ]
+  },
+  {
+    "id": "ct-012",
+    "slug": "camisa-napoli-i-2025",
+    "name": "Camisa Napoli I 2025 Azul - Torcedor Masculina",
+    "category": "europa",
+    "subcategory": "Serie A",
+    "club": "Napoli",
+    "league": "Serie A",
+    "gender": "masculino",
+    "oldPrice": 229.9,
+    "price": 179.9,
+    "discount": 22,
+    "installments": "2x de R$ 89,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "M"
+    ],
+    "customizable": false,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-012/ct-012__camisa-napoli-i-2025__front__public-reference__v1.jpeg"
+    ],
+    "description": "Azul celeste com detalhes brancos, leve e facil de combinar.",
+    "tags": [
+      "napoli",
+      "serie a",
+      "italia",
+      "europa",
+      "pronta entrega"
+    ],
+    "related": [
+      "camisa-real-madrid-iii-2026-azul",
+      "camisa-birmingham-i-2026"
+    ],
+    "colors": [
+      "#5CB7E8",
+      "#FFFFFF",
+      "#1C5C91"
+    ]
+  },
+  {
+    "id": "ct-013",
+    "slug": "camisa-real-madrid-iii-2026-azul",
+    "name": "Camisa Real Madrid III 2026 Azul - Torcedor Masculina",
+    "category": "europa",
+    "subcategory": "La Liga",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "gender": "masculino",
+    "oldPrice": 269.9,
+    "price": 189.9,
+    "discount": 30,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P"
+    ],
+    "customizable": false,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-013/ct-013__camisa-real-madrid-iii-2026-azul__front__public-reference__v1.webp"
+    ],
+    "description": "Azul elegante em proposta alternativa, com tecido leve e visual premium.",
+    "tags": [
+      "real madrid",
+      "la liga",
+      "europa",
+      "azul",
+      "pronta entrega"
+    ],
+    "related": [
+      "camisa-barcelona-i-2026",
+      "camisa-napoli-i-2025"
+    ],
+    "colors": [
+      "#1B58B8",
+      "#FFFFFF",
+      "#D9B75E"
+    ]
+  },
+  {
+    "id": "ct-014",
+    "slug": "camisa-barcelona-i-2026",
+    "name": "Camisa Barcelona I 2026 - Torcedor Masculina",
+    "category": "europa",
+    "subcategory": "La Liga",
+    "club": "Barcelona",
+    "league": "La Liga",
+    "gender": "masculino",
+    "oldPrice": 249.9,
+    "price": 189.9,
+    "discount": 24,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-014/ct-014__camisa-barcelona-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Azul e grená em faixas verticais, com personalizacao opcional.",
+    "tags": [
+      "barcelona",
+      "la liga",
+      "europa",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-real-madrid-iii-2026-azul",
+      "camisa-manchester-city-i-2026"
+    ],
+    "colors": [
+      "#0E3D8C",
+      "#8A1230",
+      "#F1C75B"
+    ]
+  },
+  {
+    "id": "ct-015",
+    "slug": "camisa-manchester-city-i-2026",
+    "name": "Camisa Manchester City I 2026 - Torcedor Masculina",
+    "category": "europa",
+    "subcategory": "Premier League",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "gender": "masculino",
+    "oldPrice": 239.9,
+    "price": 189.9,
+    "discount": 21,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-015/ct-015__camisa-manchester-city-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Azul claro com linhas sutis, acabamento limpo e tecido de toque leve.",
+    "tags": [
+      "manchester city",
+      "premier league",
+      "europa",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-birmingham-i-2026",
+      "camisa-psg-i-2026"
+    ],
+    "colors": [
+      "#8FD3F4",
+      "#FFFFFF",
+      "#263D72"
+    ]
+  },
+  {
+    "id": "ct-016",
+    "slug": "camisa-birmingham-i-2026",
+    "name": "Camisa Birmingham I 2026 Azul - Torcedor Masculina",
+    "category": "europa",
+    "subcategory": "Championship",
+    "club": "Birmingham",
+    "league": "Championship",
+    "gender": "masculino",
+    "oldPrice": 0,
+    "price": 189.9,
+    "discount": 0,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/api/product-art/camisa-birmingham-i-2026"
+    ],
+    "description": "Azul vivo com detalhes amarelos, escolha forte para quem curte ligas inglesas.",
+    "tags": [
+      "birmingham",
+      "championship",
+      "europa",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-manchester-city-i-2026",
+      "camisa-napoli-i-2025"
+    ],
+    "colors": [
+      "#034EA2",
+      "#F4C430",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-017",
+    "slug": "camisa-psg-i-2026",
+    "name": "Camisa Paris I 2026 - Torcedor Masculina",
+    "category": "europa",
+    "subcategory": "Ligue 1",
+    "club": "Paris",
+    "league": "Ligue 1",
+    "gender": "masculino",
+    "oldPrice": 249.9,
+    "price": 189.9,
+    "discount": 24,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-017/ct-017__camisa-psg-i-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-017/ct-017__camisa-psg-i-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Azul marinho com faixa central e detalhes vermelhos em uma leitura urbana.",
+    "tags": [
+      "paris",
+      "ligue 1",
+      "europa",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-manchester-city-i-2026",
+      "camisa-barcelona-i-2026"
+    ],
+    "colors": [
+      "#071C44",
+      "#D71920",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-018",
+    "slug": "camisa-argentina-i-2026",
+    "name": "Camisa Argentina I 2026 - Torcedor Masculina",
+    "category": "selecoes",
+    "subcategory": "Americas",
+    "club": "Argentina",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 249.9,
+    "price": 189.9,
+    "discount": 24,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-018/ct-018__camisa-argentina-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Listras azul celeste e branco, visual tradicional para colecionadores.",
+    "tags": [
+      "argentina",
+      "selecao",
+      "americas",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-brasil-ii-2026-azul",
+      "camisa-japao-i-2026"
+    ],
+    "colors": [
+      "#8FD3F4",
+      "#FFFFFF",
+      "#D9B75E"
+    ]
+  },
+  {
+    "id": "ct-019",
+    "slug": "camisa-japao-i-2026",
+    "name": "Camisa Japao I 2026 Azul - Torcedor Masculina",
+    "category": "selecoes",
+    "subcategory": "Asia",
+    "club": "Japao",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 249.9,
+    "price": 189.9,
+    "discount": 24,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-019/ct-019__camisa-japao-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Azul royal com textura geometrica inspirada em movimento e velocidade.",
+    "tags": [
+      "japao",
+      "asia",
+      "selecao",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-brasil-ii-2026-azul",
+      "camisa-argentina-i-2026"
+    ],
+    "colors": [
+      "#173EA5",
+      "#FFFFFF",
+      "#D82731"
+    ]
+  },
+  {
+    "id": "ct-020",
+    "slug": "camisa-al-hilal-i-2026",
+    "name": "Camisa Al-Hilal I 2026 - Torcedor Masculina",
+    "category": "resto-do-mundo",
+    "subcategory": "Arabias",
+    "club": "Al-Hilal",
+    "league": "Resto do Mundo",
+    "gender": "masculino",
+    "oldPrice": 229.9,
+    "price": 179.9,
+    "discount": 22,
+    "installments": "2x de R$ 89,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-020/ct-020__camisa-al-hilal-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Azul e branco com leitura limpa, destaque entre os clubes fora da Europa.",
+    "tags": [
+      "al-hilal",
+      "arabias",
+      "resto do mundo",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-al-nassr-i-2026",
+      "camisa-inter-miami-i-2026"
+    ],
+    "colors": [
+      "#0757B8",
+      "#FFFFFF",
+      "#6CA8FF"
+    ]
+  },
+  {
+    "id": "ct-021",
+    "slug": "camisa-al-nassr-i-2026",
+    "name": "Camisa Al-Nassr I 2026 - Torcedor Masculina",
+    "category": "resto-do-mundo",
+    "subcategory": "Arabias",
+    "club": "Al-Nassr",
+    "league": "Resto do Mundo",
+    "gender": "masculino",
+    "oldPrice": 229.9,
+    "price": 179.9,
+    "discount": 22,
+    "installments": "2x de R$ 89,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-021/ct-021__camisa-al-nassr-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Amarela com azul em detalhes marcantes e personalizacao disponivel.",
+    "tags": [
+      "al-nassr",
+      "arabias",
+      "resto do mundo",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-al-hilal-i-2026",
+      "camisa-inter-miami-i-2026"
+    ],
+    "colors": [
+      "#F5D13D",
+      "#173EA5",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-022",
+    "slug": "camisa-inter-miami-i-2026",
+    "name": "Camisa Inter Miami I 2026 Rosa - Torcedor Masculina",
+    "category": "resto-do-mundo",
+    "subcategory": "MLS",
+    "club": "Inter Miami",
+    "league": "MLS",
+    "gender": "masculino",
+    "oldPrice": 249.9,
+    "price": 189.9,
+    "discount": 24,
+    "installments": "2x de R$ 94,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-022/ct-022__camisa-inter-miami-i-2026__front__public-reference__v1.jpg"
+    ],
+    "description": "Rosa suave com acabamento urbano e grande procura entre colecionadores.",
+    "tags": [
+      "inter miami",
+      "mls",
+      "resto do mundo",
+      "personalizavel",
+      "mais vendidos"
+    ],
+    "related": [
+      "camisa-al-hilal-i-2026",
+      "camisa-barcelona-i-2026"
+    ],
+    "colors": [
+      "#F2A6C6",
+      "#111111",
+      "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-023",
+    "slug": "camisa-portugal-i-2026",
+    "name": "Camisa Portugal I 2026 - Torcedor Masculina",
+    "category": "selecoes",
+    "subcategory": "Europa",
+    "club": "Portugal",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 239.9,
+    "price": 179.9,
+    "discount": 25,
+    "installments": "2x de R$ 89,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL"
+    ],
+    "customizable": true,
+    "readyToShip": false,
+    "images": [
+      "/assets/products/ct-023/ct-023__camisa-portugal-i-2026__front__public-reference__v1.jpg",
+      "/assets/products/ct-023/ct-023__camisa-portugal-i-2026__back__public-reference__v1.jpg"
+    ],
+    "description": "Vermelho intenso com recortes verdes e tecido leve para uso prolongado.",
+    "tags": [
+      "portugal",
+      "selecao",
+      "europa",
+      "personalizavel"
+    ],
+    "related": [
+      "camisa-argentina-i-2026",
+      "camisa-japao-i-2026"
+    ],
+    "colors": [
+      "#B5122B",
+      "#1E7A43",
+      "#F1D06A"
+    ]
+  },
+  {
+    "id": "ct-024",
+    "slug": "camisa-tailândia-especial-azul",
+    "name": "Camisa Central da Tailândia Especial Azul",
+    "category": "personalizaveis",
+    "subcategory": "Edicao Especial",
+    "club": "Central da Tailândia",
+    "league": "Colecao Propria",
+    "gender": "unissex",
+    "oldPrice": 229.9,
+    "price": 169.9,
+    "discount": 26,
+    "installments": "2x de R$ 84,95 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/api/product-art/camisa-tailândia-especial-azul"
+    ],
+    "description": "Modelo autoral da loja em azul CBF, com detalhes amarelos e verdes para reforcar a identidade da Central.",
+    "tags": [
+      "central da tailandia",
+      "personalizavel",
+      "pronta entrega",
+      "edicao especial"
+    ],
+    "related": [
+      "camisa-brasil-ii-2026-azul",
+      "camisa-brasil-i-2026-amarela"
+    ],
+    "colors": [
+      "#004AAD",
+      "#F6D34A",
+      "#2E9F5B"
+    ]
+  }
+]
