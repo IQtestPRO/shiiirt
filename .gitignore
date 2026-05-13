@@ -9,3 +9,6 @@ playwright-report/
 *.log
 out/
 dist/
+
+# Dev-time tooling (AI agent skills, local settings)
+.claude/
