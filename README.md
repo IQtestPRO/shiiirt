@@ -1,4 +1,4 @@
-# Central da Tailândia
+# Mundo das Importadas
 
 Loja online em Next.js para camisas esportivas importadas, personalizáveis e finalizadas pelo WhatsApp. A experiência foi inspirada em padrões de e-commerce brasileiro de camisas de futebol, com branding próprio e canais de atendimento próprios.
 
@@ -45,7 +45,7 @@ Crie um `.env.local` baseado em `.env.example`:
 
 ```bash
 NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
-NEXT_PUBLIC_STORE_NAME=Central da Tailândia
+NEXT_PUBLIC_STORE_NAME=Mundo das Importadas
 ```
 
 Use apenas números com DDI e DDD. Se a variável não existir, o projeto usa o placeholder `5500000000000`.

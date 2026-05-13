@@ -1,67 +1,100 @@
 import Link from "next/link";
-import { Facebook, Instagram, MessageCircle } from "lucide-react";
-import { BrandMark } from "@/components/BrandMark";
-import { categories, storeName } from "@/lib/catalog";
+import { storeName } from "@/lib/catalog";
+
+type FooterLink = { label: string; href: string };
+type FooterGroup = { title: string; links: FooterLink[] };
+
+const groups: FooterGroup[] = [
+  {
+    title: "Páginas",
+    links: [
+      { label: "Pronta entrega", href: "/categoria/pronta-entrega" },
+      { label: "Brasileirão", href: "/categoria/brasileirao" },
+      { label: "Europa", href: "/categoria/europa" },
+      { label: "Seleções", href: "/categoria/selecoes" },
+      { label: "Femininas", href: "/categoria/femininas" },
+      { label: "Promoções", href: "/categoria/promocoes" }
+    ]
+  },
+  {
+    title: "Redes",
+    links: [
+      { label: "Instagram", href: "#" },
+      { label: "Facebook", href: "#" },
+      { label: "WhatsApp", href: "#" },
+      { label: "TikTok", href: "#" }
+    ]
+  },
+  {
+    title: "Termos",
+    links: [
+      { label: "Política de privacidade", href: "#" },
+      { label: "Termos de uso", href: "#" },
+      { label: "Política de cookies", href: "#" },
+      { label: "Trocas e devoluções", href: "#" }
+    ]
+  },
+  {
+    title: "Conta",
+    links: [
+      { label: "Minha conta", href: "#" },
+      { label: "Meus pedidos", href: "#" },
+      { label: "Rastrear pedido", href: "#" },
+      { label: "Tabela de medidas", href: "/busca?q=tamanho" }
+    ]
+  }
+];
 
 export function Footer() {
   return (
-    <footer className="mt-12 bg-brand-ink text-white">
-      <div className="container-page grid gap-8 py-11 md:grid-cols-[1.35fr_1fr_1fr_1fr]">
-        <div>
-          <BrandMark />
-          <p className="mt-5 max-w-sm text-sm font-medium leading-6 text-slate-300">
-            Camisas importadas, personalizadas e prontas para jogo, com atendimento direto e catálogo organizado para compra rápida.
+    <footer className="relative overflow-hidden border-t border-white/[0.06] bg-neutral-950 text-brand-paper">
+      <div className="container-page relative z-10 grid gap-12 py-20 md:grid-cols-5 md:gap-10">
+        {/* Col 1 — brand */}
+        <div className="md:col-span-1">
+          <div className="flex items-center gap-3">
+            <img
+              src="/assets/logo-mundo.png"
+              alt={storeName}
+              className="h-10 w-auto"
+              style={{ filter: "invert(1)" }}
+              loading="lazy"
+            />
+            <span className="font-poppins text-[14px] font-semibold text-brand-paper">
+              {storeName}
+            </span>
+          </div>
+          <p className="font-poppins mt-6 text-[12px] font-normal leading-6 text-brand-paper/40">
+            © 2026 {storeName}. Todos os direitos reservados.
           </p>
-          <div className="mt-5 flex gap-2">
-            <a className="grid h-11 w-11 place-items-center rounded-md bg-white/10 transition hover:bg-white/15" href="#" aria-label="Instagram da Central da Tailândia">
-              <Instagram className="h-5 w-5" aria-hidden="true" />
-            </a>
-            <a className="grid h-11 w-11 place-items-center rounded-md bg-white/10 transition hover:bg-white/15" href="#" aria-label="Facebook da Central da Tailândia">
-              <Facebook className="h-5 w-5" aria-hidden="true" />
-            </a>
-            <a className="grid h-11 w-11 place-items-center rounded-md bg-white/10 transition hover:bg-white/15" href="#" aria-label="WhatsApp da Central da Tailândia">
-              <MessageCircle className="h-5 w-5" aria-hidden="true" />
-            </a>
-          </div>
         </div>
-        <div>
-          <h2 className="text-sm font-extrabold uppercase tracking-[0.14em] text-brand-gold">Categorias</h2>
-          <div className="mt-3 space-y-2">
-            {categories.slice(0, 6).map((category) => (
-              <Link key={category.slug} className="block text-sm font-semibold text-slate-300 hover:text-white" href={`/categoria/${category.slug}`}>
-                {category.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div>
-          <h2 className="text-sm font-extrabold uppercase tracking-[0.14em] text-brand-gold">Atendimento</h2>
-          <div className="mt-3 space-y-2 text-sm font-semibold text-slate-300">
-            <p>Segunda a sexta, 9h às 18h</p>
-            <p>Finalização e dúvidas pelo WhatsApp da loja.</p>
-            <p>Envio para todo Brasil.</p>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-sm font-extrabold uppercase tracking-[0.14em] text-brand-gold">Ajuda</h2>
-          <div className="mt-3 space-y-2 text-sm font-semibold text-slate-300">
-            <Link className="block hover:text-white" href="/categoria/personalizaveis">
-              Personalização
-            </Link>
-            <Link className="block hover:text-white" href="/categoria/pronta-entrega">
-              Pronta entrega
-            </Link>
-            <Link className="block hover:text-white" href="/busca?q=tamanho">
-              Tabela de medidas
-            </Link>
-          </div>
-        </div>
+
+        {/* Cols 2–5 — link groups */}
+        {groups.map((group) => (
+          <nav key={group.title} aria-label={group.title} className="md:col-span-1">
+            <h2 className="font-poppins text-[14px] font-semibold text-brand-paper">{group.title}</h2>
+            <ul className="mt-5 flex flex-col gap-3">
+              {group.links.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="font-poppins text-[13px] font-normal text-brand-paper/55 transition-colors duration-150 ease-out hover:text-brand-paper"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
       </div>
-      <div className="border-t border-white/10 py-4">
-        <div className="container-page flex flex-col gap-2 text-xs font-semibold text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-          <span>© 2026 {storeName}. Identidade própria.</span>
-          <span>Compra finalizada pelo WhatsApp configurado no ambiente.</span>
-        </div>
+
+      {/* Ghost wordmark */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none relative -mt-2 select-none overflow-hidden px-4 text-center font-poppins font-extrabold uppercase leading-[0.82] tracking-[-0.04em] text-white/[0.04]"
+      >
+        <span className="block whitespace-nowrap text-[clamp(2.8rem,13.5vw,13rem)]">Mundo das</span>
+        <span className="block whitespace-nowrap text-[clamp(2.8rem,13.5vw,13rem)]">Importadas</span>
       </div>
     </footer>
   );

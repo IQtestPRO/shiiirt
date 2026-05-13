@@ -48,7 +48,7 @@ export function LoginModal({ open, onClose }: { open: boolean; onClose: () => vo
           </label>
           <button
             type="button"
-            className="h-12 w-full rounded-md bg-brand-blue px-4 font-extrabold text-white transition hover:bg-brand-blueDark"
+            className="h-12 w-full rounded-md bg-brand-ink px-4 font-extrabold text-brand-paper transition hover:bg-brand-blue"
           >
             Iniciar sessão
           </button>

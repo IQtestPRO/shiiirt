@@ -14,7 +14,7 @@ describe("whatsapp checkout", () => {
     };
 
     const message = buildWhatsAppMessage([item]);
-    expect(message).toContain("Olá, quero finalizar meu pedido na Central da Tailândia:");
+    expect(message).toContain("Olá, quero finalizar meu pedido na Mundo das Importadas:");
     expect(message).toContain("- Tamanho: M");
     expect(message).toContain("ARTHUR");
     expect(message).toContain("Total:");

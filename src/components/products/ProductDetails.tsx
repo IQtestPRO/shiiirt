@@ -83,7 +83,7 @@ export function ProductDetails({ product, related }: { product: Product; related
             <button
               type="button"
               onClick={buy}
-              className="min-h-12 w-full rounded-md bg-brand-blue px-5 text-sm font-extrabold text-white transition hover:bg-brand-blueDark"
+              className="min-h-12 w-full rounded-md bg-brand-ink px-5 text-sm font-extrabold text-brand-paper transition hover:bg-brand-blue"
             >
               Comprar
             </button>
@@ -95,7 +95,7 @@ export function ProductDetails({ product, related }: { product: Product; related
               { icon: Ruler, title: "Medidas", text: "P ao 4XL conforme modelo" },
               { icon: Heart, title: "Acabamento", text: "Tecido leve torcedor" }
             ].map((item) => (
-              <div key={item.title} className="rounded-md bg-brand-surface p-3">
+              <div key={item.title} className="rounded-md bg-brand-cream p-3">
                 <item.icon className="h-5 w-5 text-brand-blue" aria-hidden="true" />
                 <strong className="mt-2 block text-sm text-brand-ink">{item.title}</strong>
                 <span className="text-xs font-semibold text-slate-600">{item.text}</span>
@@ -114,7 +114,7 @@ export function ProductDetails({ product, related }: { product: Product; related
         </div>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[420px] text-left text-sm">
-            <thead className="bg-brand-surface text-brand-ink">
+            <thead className="bg-brand-cream text-brand-ink">
               <tr>
                 <th className="p-3">Tamanho</th>
                 <th className="p-3">Altura</th>

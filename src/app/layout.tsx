@@ -4,7 +4,7 @@ import { storeName } from "@/lib/catalog";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://central-da-tailandia.local"),
+  metadataBase: new URL("https://mundo-das-importadas.local"),
   title: {
     default: `${storeName} | Camisas importadas e personalizadas`,
     template: `%s | ${storeName}`

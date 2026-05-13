@@ -1,4 +1,4 @@
-export const storeName = process.env.NEXT_PUBLIC_STORE_NAME || "Central da Tailândia";
+export const storeName = process.env.NEXT_PUBLIC_STORE_NAME || "Mundo das Importadas";
 export const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5500000000000";
 
 export const categories = [

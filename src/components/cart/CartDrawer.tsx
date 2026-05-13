@@ -34,7 +34,7 @@ export function CartDrawer() {
   return (
     <div className="fixed inset-0 z-[91]">
       <button className="absolute inset-0 bg-slate-950/55" aria-label="Fechar carrinho" onClick={closeCart} />
-      <aside className="absolute right-0 top-0 flex h-full w-[min(100vw,440px)] flex-col bg-brand-surface shadow-soft">
+      <aside className="absolute right-0 top-0 flex h-full w-[min(100vw,440px)] flex-col bg-brand-paper shadow-soft">
         <header className="flex items-center justify-between bg-brand-ink px-4 py-4 text-white">
           <div>
             <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-blue-100">Adicionado ao carrinho</p>

@@ -59,7 +59,7 @@ export function ProductQuickViewModal({ product, onClose }: { product: Product; 
         >
           <X className="h-5 w-5" aria-hidden="true" />
         </button>
-        <div className="bg-brand-surface p-4 sm:p-6">
+        <div className="bg-brand-cream p-4 sm:p-6">
           <ProductImage product={product} priority />
         </div>
         <div className="space-y-5 p-5 sm:p-7">
@@ -88,7 +88,7 @@ export function ProductQuickViewModal({ product, onClose }: { product: Product; 
             <button
               type="button"
               onClick={buy}
-              className="min-h-12 rounded-md bg-brand-blue px-4 text-sm font-extrabold text-white transition hover:bg-brand-blueDark"
+              className="min-h-12 rounded-md bg-brand-ink px-4 text-sm font-extrabold text-brand-paper transition hover:bg-brand-blue"
             >
               Adicionar ao carrinho
             </button>

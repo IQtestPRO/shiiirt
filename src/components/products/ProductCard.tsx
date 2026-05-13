@@ -1,108 +1,111 @@
 "use client";
 
-import { Eye, ShoppingBag } from "lucide-react";
+import { Eye } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { PersonalizationSelector } from "@/components/PersonalizationSelector";
-import { PriceBlock } from "@/components/PriceBlock";
-import { SizeSelector } from "@/components/SizeSelector";
 import { ProductImage } from "@/components/products/ProductImage";
 import { ProductQuickViewModal } from "@/components/products/ProductQuickViewModal";
-import { useCartStore } from "@/store/cart-store";
-import type { Personalization, Product } from "@/types/product";
+import { CometCard } from "@/components/ui/comet-card";
+import { formatCurrency } from "@/lib/format";
+import type { Product } from "@/types/product";
+
+const ACTION_BLUE = "bg-[#1959D2]";
+
+function parseInstallments(raw: string) {
+  const match = raw.match(/^(\d+\s*x)\s+de\s+(R\$\s*[\d.,]+)\s*(.*)$/i);
+  if (!match) return { times: "", price: "", rest: raw };
+  return { times: match[1].trim(), price: match[2].trim(), rest: match[3].trim() };
+}
 
 export function ProductCard({ product }: { product: Product }) {
-  const addItem = useCartStore((state) => state.addItem);
-  const lastAddedLineId = useCartStore((state) => state.lastAddedLineId);
-  const [size, setSize] = useState("");
-  const [personalization, setPersonalization] = useState<Personalization>({ enabled: false });
-  const [error, setError] = useState("");
   const [quickOpen, setQuickOpen] = useState(false);
-
-  const added = lastAddedLineId?.startsWith(`${product.id}-${size}`.toLowerCase());
-
-  function buy() {
-    if (!size) {
-      setError("Escolha um tamanho.");
-      return;
-    }
-
-    if (personalization.enabled && (!personalization.name?.trim() || !personalization.number?.trim())) {
-      setError("Informe nome e número.");
-      return;
-    }
-
-    setError("");
-    addItem(product, size, personalization);
-  }
+  const installments = parseInstallments(product.installments);
 
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-lg bg-white shadow-card ring-1 ring-slate-200/75 transition duration-200 hover:-translate-y-0.5 hover:shadow-premium">
-      <Link href={`/produtos/${product.slug}`} aria-label={`Ver ${product.name}`}>
+    <CometCard className="h-full">
+      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white p-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition-shadow duration-300 ease-out hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+      <Link href={`/produtos/${product.slug}`} aria-label={`Ver ${product.name}`} className="relative block">
         <ProductImage product={product} />
+
+        <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-2">
+          {product.discount > 0 ? (
+            <span
+              className={`font-poppins grid h-14 w-14 place-items-center rounded-full ${ACTION_BLUE} text-center text-[11px] font-extrabold uppercase leading-[1.05] text-white shadow-[0_4px_10px_rgba(25,89,210,0.35)]`}
+            >
+              <span>
+                {product.discount}%
+                <br />
+                OFF
+              </span>
+            </span>
+          ) : (
+            <span
+              className={`font-poppins rounded-full ${ACTION_BLUE} px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.16em] text-white shadow-[0_4px_10px_rgba(25,89,210,0.30)]`}
+            >
+              Novo
+            </span>
+          )}
+          {product.freeShipping ? (
+            <span
+              className={`font-poppins rounded-full ${ACTION_BLUE} px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.16em] text-white shadow-[0_4px_10px_rgba(25,89,210,0.30)]`}
+            >
+              Frete grátis
+            </span>
+          ) : null}
+        </div>
       </Link>
 
-      <div className="absolute left-3 top-3 flex flex-col gap-1">
-        {product.discount > 0 ? (
-          <span className="rounded-full bg-brand-ink px-2.5 py-1 text-[11px] font-extrabold text-white ring-1 ring-white/15">{product.discount}% OFF</span>
-        ) : (
-          <span className="rounded-full bg-brand-yellow px-2.5 py-1 text-[11px] font-extrabold text-brand-ink">Novo</span>
-        )}
-      </div>
+      <div className="flex flex-1 flex-col items-center gap-3 px-2 pb-2 pt-5 text-center">
+        <Link
+          href={`/produtos/${product.slug}`}
+          className="font-poppins block min-h-[42px] max-w-[34ch] text-balance text-[13px] font-normal leading-[1.4] text-neutral-500 transition-colors duration-150 ease-out hover:text-neutral-800"
+        >
+          {product.name}
+        </Link>
 
-      <div className="flex flex-1 flex-col gap-3 p-3.5">
-        <div>
-          <Link href={`/produtos/${product.slug}`} className="line-clamp-2 min-h-10 text-[13px] font-bold leading-5 text-brand-ink hover:text-brand-blue">
-            {product.name}
-          </Link>
-          <div className="mt-1 flex flex-wrap items-center gap-1.5">
-            <p className="text-[11px] font-bold uppercase text-slate-500">{product.club}</p>
-            {product.freeShipping ? (
-              <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[10px] font-extrabold uppercase text-brand-green ring-1 ring-emerald-100">
-                Frete grátis
-              </span>
-            ) : null}
-          </div>
+        <div className="flex items-baseline justify-center gap-2.5">
+          {product.oldPrice > product.price ? (
+            <span className="font-poppins text-[13px] font-normal text-neutral-400 line-through">
+              {formatCurrency(product.oldPrice)}
+            </span>
+          ) : null}
+          <span className="font-poppins text-[20px] font-extrabold tracking-tight text-brand-ink">
+            {formatCurrency(product.price)}
+          </span>
         </div>
 
-        <PriceBlock oldPrice={product.oldPrice} price={product.price} installments={product.installments} compact />
-        <SizeSelector sizes={product.sizes} value={size} onChange={(value) => {
-          setSize(value);
-          setError("");
-        }} compact />
-        <PersonalizationSelector
-          customizable={product.customizable}
-          value={personalization}
-          onChange={(value) => {
-            setPersonalization(value);
-            setError("");
-          }}
-          compact
-        />
-        {error ? <p className="rounded-md bg-red-50 px-3 py-2 text-xs font-bold text-red-700">{error}</p> : null}
-        {added ? <p className="rounded-md bg-green-50 px-3 py-2 text-xs font-extrabold text-brand-green">Adicionado ao carrinho!</p> : null}
+        {installments.times ? (
+          <p className="font-poppins text-[12px] font-normal text-neutral-500">
+            <span className="font-bold text-neutral-700">{installments.times}</span>
+            {" de "}
+            <span className="font-bold text-neutral-700">{installments.price}</span>
+            {installments.rest ? <> {installments.rest}</> : null}
+          </p>
+        ) : (
+          <p className="font-poppins text-[12px] font-normal text-neutral-500">{product.installments}</p>
+        )}
 
-        <div className="mt-auto grid grid-cols-[1fr_auto] gap-2 pt-1">
+        <div className="mt-3 grid w-full grid-cols-2 gap-2.5">
           <button
             type="button"
-            onClick={buy}
-            className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-brand-blue px-3 text-xs font-extrabold uppercase text-white transition hover:bg-brand-blueDark"
+            onClick={() => setQuickOpen(true)}
+            className="font-poppins inline-flex min-h-11 items-center justify-center rounded-full bg-brand-ink px-4 text-[11px] font-bold uppercase tracking-[0.16em] text-white transition-colors duration-200 ease-out hover:bg-neutral-800"
           >
-            <ShoppingBag className="h-4 w-4" aria-hidden="true" />
-            Adicionar
+            Comprar
           </button>
           <button
             type="button"
             onClick={() => setQuickOpen(true)}
-            className="grid h-11 w-11 place-items-center rounded-md border border-brand-blue/35 text-brand-blue transition hover:bg-blue-50"
-            aria-label={`Espiar ${product.name}`}
+            className="font-poppins inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-4 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-ink transition-colors duration-200 ease-out hover:border-neutral-400 hover:bg-neutral-50"
           >
-            <Eye className="h-5 w-5" aria-hidden="true" />
+            <Eye className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
+            Espiar
           </button>
         </div>
       </div>
 
       {quickOpen ? <ProductQuickViewModal product={product} onClose={() => setQuickOpen(false)} /> : null}
     </article>
+    </CometCard>
   );
 }

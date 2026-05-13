@@ -3,7 +3,7 @@ import { categories } from "@/lib/catalog";
 import { products } from "@/lib/products";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://central-da-tailandia.local";
+  const baseUrl = "https://mundo-das-importadas.local";
   return [
     {
       url: baseUrl,

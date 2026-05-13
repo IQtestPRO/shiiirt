@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
-const STORE = "Central da Tailândia";
+const STORE = "Mundo das Importadas";
 const ROOT = process.cwd();
 const productsPath = path.join(ROOT, "data", "products.json");
 const manifestPath = path.join(ROOT, "docs", "asset-rights", "asset-manifest.json");

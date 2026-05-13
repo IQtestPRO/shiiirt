@@ -47,7 +47,7 @@ O catálogo está em `data/products.json` e contém 24 produtos com:
 - `related`
 - `colors`
 
-22 dos 24 produtos usam imagens públicas importadas para `public/assets/products/`. Dois produtos permanecem com SVG local gerado por `/api/product-art/[slug]`: Birmingham, por ausência de fonte pública baixável sem bloqueio, e o produto autoral da Central da Tailândia.
+22 dos 24 produtos usam imagens públicas importadas para `public/assets/products/`. Dois produtos permanecem com SVG local gerado por `/api/product-art/[slug]`: Birmingham, por ausência de fonte pública baixável sem bloqueio, e o produto autoral da Mundo das Importadas.
 
 Para repetir o processo:
 
@@ -75,7 +75,7 @@ A home atual usa um novo hero com a camisa principal Brasil 2026:
 
 - Substituir mock de estoque por banco de dados ou ERP.
 - Validar licenciamento de marcas, clubes, seleções e fornecedores.
-- Trocar contatos placeholders por canais oficiais da Central da Tailândia.
+- Trocar contatos placeholders por canais oficiais da Mundo das Importadas.
 - Adicionar frete por CEP real.
 - Criar política de troca, privacidade, cookies e termos.
 - Adicionar imagens reais autorizadas dos produtos.

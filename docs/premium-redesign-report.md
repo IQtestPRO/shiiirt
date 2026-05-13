@@ -2,7 +2,7 @@
 
 ## Diagnóstico
 
-A loja já tinha a mecânica de e-commerce pronta, mas a camada visual ainda transmitia varejo promocional: badges muito agressivos, peso tipográfico excessivo, cards apertados, footer com linguagem de protótipo e hero com controles de carrossel que não correspondiam a uma interação real. A correção foi reposicionar a Central da Tailândia como uma boutique esportiva brasileira: curadoria de camisas, compra assistida por WhatsApp e vitrine limpa.
+A loja já tinha a mecânica de e-commerce pronta, mas a camada visual ainda transmitia varejo promocional: badges muito agressivos, peso tipográfico excessivo, cards apertados, footer com linguagem de protótipo e hero com controles de carrossel que não correspondiam a uma interação real. A correção foi reposicionar o Mundo das Importadas como uma boutique esportiva brasileira: curadoria de camisas, compra assistida por WhatsApp e vitrine limpa.
 
 ## Direção de Marca
 

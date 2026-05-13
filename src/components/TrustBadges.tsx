@@ -1,27 +1,28 @@
-import { BadgeCheck, MessageCircle, PackageCheck, PenLine, Truck } from "lucide-react";
+import { MessageCircle, PenLine, ShieldCheck, Truck } from "lucide-react";
 
 const badges = [
-  { icon: MessageCircle, title: "Atendimento rápido", text: "Pedido orientado por WhatsApp, sem checkout engessado." },
-  { icon: PenLine, title: "Personalização disponível", text: "Nome e número em modelos selecionados no próprio carrinho." },
-  { icon: Truck, title: "Envio para todo Brasil", text: "Catálogo organizado por pronta entrega, linha e tamanho." },
-  { icon: BadgeCheck, title: "Curadoria visual", text: "Fotos padronizadas e modelos conferidos por temporada." }
+  { icon: MessageCircle, title: "WhatsApp 1:1", text: "Atendente humano finaliza seu pedido com calma." },
+  { icon: PenLine, title: "Personalização", text: "Nome e número opcionais em modelos selecionados." },
+  { icon: Truck, title: "Envio rápido", text: "Frete grátis acima de R$ 199. Brasil inteiro." },
+  { icon: ShieldCheck, title: "Curadoria", text: "Foto fiel. Modelagem conferida peça a peça." }
 ];
 
 export function TrustBadges() {
   return (
-    <section className="container-page grid gap-3 py-5 sm:grid-cols-2 lg:grid-cols-4">
-      {badges.map((badge) => (
-        <article key={badge.title} className="flex min-h-[112px] items-center gap-3 rounded-lg bg-white px-4 py-4 shadow-card ring-1 ring-slate-200/80">
-          <span className="grid h-11 w-11 shrink-0 place-items-center rounded-md bg-brand-mist ring-1 ring-slate-200">
-            <badge.icon className="h-5 w-5 text-brand-blue" aria-hidden="true" />
-          </span>
-          <span>
-            <h3 className="text-sm font-extrabold text-brand-ink">{badge.title}</h3>
-            <p className="mt-1 text-xs font-semibold leading-5 text-slate-600">{badge.text}</p>
-          </span>
-        </article>
-      ))}
-      <PackageCheck className="hidden" aria-hidden="true" />
+    <section className="border-y border-brand-ink/10 bg-white">
+      <div className="container-page grid grid-cols-2 gap-x-6 gap-y-5 py-7 lg:grid-cols-4">
+        {badges.map((badge) => (
+          <div key={badge.title} className="flex items-start gap-3">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-brand-ink/15 bg-brand-paper text-brand-ink">
+              <badge.icon className="h-4 w-4" aria-hidden="true" strokeWidth={1.6} />
+            </span>
+            <span className="min-w-0">
+              <h3 className="text-[12px] font-extrabold uppercase tracking-[0.16em] text-brand-ink">{badge.title}</h3>
+              <p className="mt-0.5 text-[12px] font-medium leading-5 text-brand-ink/60">{badge.text}</p>
+            </span>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }

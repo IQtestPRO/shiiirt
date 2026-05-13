@@ -1,67 +1,85 @@
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, MessageCircle, PackageCheck, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { LampGlow } from "@/components/effects/LampGlow";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { products } from "@/lib/products";
 
 export function HeroBanner() {
   const featured = products.find((product) => product.slug === "camisa-brasil-i-2026-amarela") || products[0];
 
   return (
-    <section className="bg-brand-ink">
-      <div className="container-page relative py-3 sm:py-4">
-        <div className="relative min-h-[340px] overflow-hidden rounded-lg bg-brand-ink text-white shadow-soft ring-1 ring-white/10 sm:min-h-[410px] lg:min-h-[480px]">
-          <img
-            src="/assets/hero-brasil-copa-2026-premium.png"
-            alt="Camisa principal Brasil 2026 amarela em banner premium da Central da Tailândia"
-            className="absolute inset-0 h-full w-full object-cover"
-            loading="eager"
-          />
-          <div
-            className="absolute inset-0 bg-gradient-to-r from-brand-ink/6 via-brand-ink/38 to-brand-ink/88 sm:from-brand-ink/0 sm:via-brand-ink/8 sm:to-brand-ink/84"
-            aria-hidden="true"
-          />
-          <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-brand-ink/50 to-transparent" aria-hidden="true" />
+    <section className="relative bg-brand-paper">
+      <div className="container-wide pt-3 pb-2">
+        <div className="relative overflow-hidden rounded-[24px] bg-brand-ink">
+          <div className="relative aspect-[21/9]">
+            <img
+              src="/assets/hero-jersey.png"
+              alt="Camisa amarela em estúdio cinematográfico com spotlight"
+              className="absolute inset-0 h-full w-full object-cover opacity-95"
+              loading="eager"
+            />
+            {/* Lamp effect — alinhado ao spotlight da foto (centro ~67% da esquerda) */}
+            <LampGlow className="left-[70%] -translate-x-1/2 sm:left-[68%] lg:left-[67%]" />
+            <div
+              className="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-ink/95 via-brand-ink/55 to-transparent"
+              aria-hidden="true"
+            />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-brand-ink/85 to-transparent" aria-hidden="true" />
 
-          <div className="relative ml-auto flex min-h-[340px] w-[76%] max-w-xl flex-col justify-center px-5 py-8 text-right sm:min-h-[410px] sm:w-auto sm:px-9 lg:min-h-[480px] lg:px-12">
-            <span className="ml-auto inline-flex w-fit items-center gap-2 rounded-full bg-brand-yellow px-3 py-2 text-xs font-extrabold uppercase tracking-[0.08em] text-brand-ink shadow-card">
-              <Sparkles className="h-4 w-4 text-brand-blue" aria-hidden="true" />
-              Copa do Mundo 2026
-            </span>
-            <h1 className="mt-4 text-3xl font-extrabold leading-[0.98] text-white sm:text-6xl lg:text-7xl">
-              Brasil 2026: a principal chegou
-            </h1>
-            <p className="ml-auto mt-4 max-w-md text-sm font-semibold leading-6 text-blue-50 sm:text-lg sm:leading-7">
-              A camisa amarela que abre o ciclo da Copa, com visual premium, pronta entrega e compra pelo WhatsApp.
-            </p>
-            <div className="ml-auto mt-5 hidden max-w-lg flex-wrap justify-end gap-2 sm:flex">
-              {[
-                { icon: PackageCheck, label: "Pronta entrega" },
-                { icon: BadgeCheck, label: "Curadoria visual" },
-                { icon: MessageCircle, label: "Pedido assistido" }
-              ].map((item) => (
-                <span
-                  key={item.label}
-                  className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-xs font-bold text-white ring-1 ring-white/15"
-                >
-                  <item.icon className="h-4 w-4 text-brand-yellow" aria-hidden="true" />
-                  {item.label}
-                </span>
-              ))}
+            <div className="absolute inset-0 flex flex-col justify-center px-6 py-10 text-brand-paper sm:px-12 sm:py-14 lg:px-16">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.32em] text-brand-yellow">
+                  <span className="h-px w-8 bg-brand-yellow/60" aria-hidden="true" />
+                  Edição Copa 2026 · Pronta entrega
+                </div>
+                <h1 className="font-poppins mt-5 text-[clamp(2.4rem,7vw,5.6rem)] font-extrabold uppercase leading-[0.92] tracking-[-0.035em]">
+                  Rumo
+                  <span className="block text-brand-yellow">ao hexa.</span>
+                  <span className="block">O manto chegou.</span>
+                </h1>
+                <p className="mt-5 max-w-md text-[15px] font-medium leading-7 text-brand-paper/75 sm:text-base">
+                  Nova camisa da seleção brasileira 2026 — edição limitada, pronta entrega e personalização opcional.
+                </p>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+                  <HoverBorderGradient containerClassName="rounded-full">
+                    <Link
+                      href={`/produtos/${featured.slug}`}
+                      className="group inline-flex min-h-12 w-full items-center justify-between gap-3 rounded-full bg-brand-yellow pl-6 pr-1.5 text-[13px] font-extrabold uppercase tracking-[0.18em] text-brand-ink transition-colors duration-200 ease-out hover:bg-white"
+                    >
+                      <span>Comprar agora</span>
+                      <span className="grid h-9 w-9 place-items-center rounded-full bg-brand-ink text-brand-yellow transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
+                        <ArrowUpRight className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
+                      </span>
+                    </Link>
+                  </HoverBorderGradient>
+                  <Link
+                    href="/categoria/pronta-entrega"
+                    className="inline-flex min-h-12 items-center gap-2 text-[12px] font-bold uppercase tracking-[0.22em] text-brand-paper underline decoration-brand-yellow/60 decoration-2 underline-offset-[8px] transition-colors duration-200 ease-out hover:decoration-brand-yellow"
+                  >
+                    Ver pronta entrega
+                  </Link>
+                </div>
+              </div>
             </div>
-            <div className="mt-7 flex flex-col justify-end gap-3 sm:flex-row">
-              <Link
-                href={`/produtos/${featured.slug}`}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md bg-brand-yellow px-5 text-sm font-extrabold text-brand-ink shadow-card transition hover:bg-white"
-              >
-                Comprar Brasil 2026
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-              <Link
-                href="/categoria/pronta-entrega"
-                className="inline-flex min-h-12 items-center justify-center rounded-md border border-white/70 px-5 text-sm font-extrabold text-white transition hover:bg-white hover:text-brand-blue"
-              >
-                Ver pronta entrega
-              </Link>
-            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="overflow-hidden border-y border-brand-ink/10 bg-brand-paper">
+        <div className="container-wide flex min-h-10 items-center overflow-hidden">
+          <div className="flex shrink-0 animate-marquee items-center gap-10 whitespace-nowrap pr-10 text-[11px] font-bold uppercase tracking-[0.32em] text-brand-ink/55">
+            {Array.from({ length: 2 }).map((_, copy) => (
+              <span key={copy} className="flex items-center gap-10">
+                <span>Frete grátis acima de R$ 199</span>
+                <span className="h-1 w-1 rounded-full bg-brand-ink/40" aria-hidden="true" />
+                <span>Pix com 5% off · Cartão em 2x</span>
+                <span className="h-1 w-1 rounded-full bg-brand-ink/40" aria-hidden="true" />
+                <span>Personalize com nome e número</span>
+                <span className="h-1 w-1 rounded-full bg-brand-ink/40" aria-hidden="true" />
+                <span>Drops semanais · novidades toda terça</span>
+                <span className="h-1 w-1 rounded-full bg-brand-ink/40" aria-hidden="true" />
+              </span>
+            ))}
           </div>
         </div>
       </div>

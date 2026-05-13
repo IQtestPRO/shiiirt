@@ -16,7 +16,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
   return (
     <div className="fixed inset-0 z-[90] lg:hidden">
       <button className="absolute inset-0 bg-slate-950/55" aria-label="Fechar menu" onClick={onClose} />
-      <aside className="absolute left-0 top-0 h-full w-[min(88vw,390px)] overflow-y-auto bg-brand-surface shadow-soft">
+      <aside className="absolute left-0 top-0 h-full w-[min(88vw,390px)] overflow-y-auto bg-brand-paper shadow-soft">
         <div className="sticky top-0 z-10 flex items-center justify-between bg-brand-blue px-4 py-4 text-white">
           <span className="text-lg font-extrabold">Menu</span>
           <button

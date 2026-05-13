@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const key = "central-da-tailandia-cookie-ok";
+const key = "mundo-das-importadas-cookie-ok";
 
 export function CookieBanner() {
   const [visible, setVisible] = useState(false);

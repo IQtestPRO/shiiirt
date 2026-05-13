@@ -1,5 +1,5 @@
 {
-  "name": "central-da-tailandia",
+  "name": "mundo-das-importadas",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,11 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
+    "motion": "^12.38.0",
     "next": "^16.2.4",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
+    "simple-icons": "^16.19.0",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
