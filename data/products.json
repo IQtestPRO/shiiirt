@@ -197,8 +197,8 @@
   },
   {
     "id": "ct-005",
-    "slug": "camisa-sao-paulo-iii-2026-preta",
-    "name": "Camisa Sao Paulo III 2026 Preta - Torcedor Masculina",
+    "slug": "camisa-sao-paulo-iii-25-26-nb-comemorativa-tricampeao-mundial",
+    "name": "Camisa São Paulo III 25/26 - Jogador Comemorativa New Balance | Tricampeão Mundial",
     "category": "brasileirao",
     "subcategory": "Sao Paulo",
     "club": "Sao Paulo",
@@ -222,24 +222,28 @@
     "customizable": false,
     "readyToShip": true,
     "images": [
-      "/assets/products/ct-005/ct-005__camisa-sao-paulo-iii-2026-preta__front__public-reference__v1.webp"
+      "/assets/products/ct-005/ct-005__camisa-sao-paulo-iii-25-26-nb-comemorativa__front__product__v2.png",
+      "/assets/products/ct-005/ct-005__camisa-sao-paulo-iii-25-26-nb-comemorativa__back__product__v2.png"
     ],
-    "description": "Versao escura comemorativa com faixas tricolores discretas e estoque limitado.",
+    "description": "Camisa III do São Paulo 25/26 edição Tricampeão Mundial — manto preto comemorativo com faixa horizontal vermelha e branca, escudo SPFC bordado, três estrelas douradas em referência aos títulos mundiais. Patrocínio Superbet em dourado e selo Ademicon. New Balance versão Jogador com tecido tecnológico.",
     "tags": [
       "sao paulo",
       "brasileirao",
       "preta",
-      "pronta entrega",
-      "promocao"
+      "new balance",
+      "superbet",
+      "comemorativa",
+      "tricampeao mundial",
+      "dourado"
     ],
     "related": [
       "camisa-sao-paulo-i-feminina-2026",
       "camisa-palmeiras-i-feminina-2026"
     ],
     "colors": [
-      "#161616",
-      "#FFFFFF",
-      "#D82731"
+      "#0A0A0A",
+      "#D81E27",
+      "#C9A33F"
     ]
   },
   {
@@ -430,8 +434,8 @@
   },
   {
     "id": "ct-010",
-    "slug": "camisa-gremio-i-tricolor-2026",
-    "name": "Camisa Gremio I Tricolor 2026 - Torcedor Masculina",
+    "slug": "camisa-gremio-i-tricolor-25-26-sem-patrocinio-umbro",
+    "name": "Camisa Grêmio I Tricolor 25/26 - Sem Patrocínio - Torcedor Umbro Masculina",
     "category": "brasileirao",
     "subcategory": "Sul",
     "club": "Gremio",
@@ -455,15 +459,19 @@
     "customizable": true,
     "readyToShip": true,
     "images": [
-      "/assets/products/ct-010/ct-010__camisa-gremio-i-tricolor-2026__front__public-reference__v1.webp"
+      "/assets/products/ct-010/ct-010__camisa-gremio-i-tricolor-25-26-sem-patrocinio__front__product__v2.png",
+      "/assets/products/ct-010/ct-010__camisa-gremio-i-tricolor-25-26-sem-patrocinio__back__product__v2.png",
+      "/assets/products/ct-010/ct-010__camisa-gremio-i-tricolor-25-26-sem-patrocinio__detail-mundo__product__v2.png"
     ],
-    "description": "Tricolor azul, preto e branco com estoque de pronta entrega e visual sem excesso.",
+    "description": "Camisa I do Grêmio 25/26 versão sem patrocínio Umbro — listras tradicionais azul, preto e branco com escudo bordado e bandeira do Rio Grande do Sul aplicada nas costas. Etiqueta interna comemorativa \"Nos quatro cantos do mundo, com o Grêmio onde o Grêmio estiver\".",
     "tags": [
       "gremio",
-      "sul",
       "brasileirao",
-      "pronta entrega",
-      "personalizavel"
+      "tricolor",
+      "umbro",
+      "sem patrocinio",
+      "rio grande do sul",
+      "azul"
     ],
     "related": [
       "kit-internacional-infantil-2026",
@@ -477,8 +485,8 @@
   },
   {
     "id": "ct-011",
-    "slug": "kit-internacional-infantil-2026",
-    "name": "Kit Internacional Infantil 2026",
+    "slug": "kit-adidas-internacional-infantil-2025",
+    "name": "Kit Adidas Internacional 2025 Infantil - Camisa + Short",
     "category": "infantil",
     "subcategory": "Sul",
     "club": "Internacional",
@@ -497,14 +505,19 @@
     "customizable": false,
     "readyToShip": true,
     "images": [
-      "/assets/products/ct-011/ct-011__kit-internacional-infantil-2026__front__public-reference__v1.jpg"
+      "/assets/products/ct-011/ct-011__kit-internacional-infantil-2025-adidas__front__product__v2.png",
+      "/assets/products/ct-011/ct-011__kit-internacional-infantil-2025-adidas__back__product__v2.png"
     ],
-    "description": "Kit infantil com camisa e short em vermelho vivo, ideal para presente.",
+    "description": "Kit oficial Internacional 2025 infantil — camisa vermelha Adidas AEROREADY com escudo bordado SCI e gola branca em formato V, mais short branco com escudo e logo Adidas em vermelho. Conjunto completo para o pequeno colorado.",
     "tags": [
       "internacional",
+      "brasileirao",
       "infantil",
       "kit",
-      "pronta entrega"
+      "adidas",
+      "vermelho",
+      "rio grande do sul",
+      "aeroready"
     ],
     "related": [
       "camisa-gremio-i-tricolor-2026",
@@ -518,8 +531,8 @@
   },
   {
     "id": "ct-012",
-    "slug": "camisa-napoli-i-2025",
-    "name": "Camisa Napoli I 2025 Azul - Torcedor Masculina",
+    "slug": "camisa-napoli-i-24-25-ea7-msc",
+    "name": "Camisa Napoli I 24/25 - Torcedor EA7 Masculina - Azul",
     "category": "europa",
     "subcategory": "Serie A",
     "club": "Napoli",
@@ -543,15 +556,19 @@
     "customizable": false,
     "readyToShip": true,
     "images": [
-      "/assets/products/ct-012/ct-012__camisa-napoli-i-2025__front__public-reference__v1.jpeg"
+      "/assets/products/ct-012/ct-012__camisa-napoli-i-24-25-ea7__front__product__v2.jpg",
+      "/assets/products/ct-012/ct-012__camisa-napoli-i-24-25-ea7__back-collar__product__v2.png"
     ],
-    "description": "Azul celeste com detalhes brancos, leve e facil de combinar.",
+    "description": "Camisa I do Napoli temporada 24/25 — azul napolitano clássico com gola polo, escudo SSC Napoli bordado e padrão monogramado no tecido. Patrocínio MSC Cruzeiros em branco, marca EA7 Emporio Armani. Lettering \"SSC NAPOLI\" aplicado nas costas.",
     "tags": [
       "napoli",
       "serie a",
-      "italia",
       "europa",
-      "pronta entrega"
+      "ea7",
+      "msc",
+      "azul",
+      "italia",
+      "polo"
     ],
     "related": [
       "camisa-real-madrid-iii-2026-azul",
@@ -1371,6 +1388,59 @@
       "#D81E27",
       "#0A0A0A",
       "#FFFFFF"
+    ]
+  },
+  {
+    "id": "ct-029",
+    "slug": "camisa-brasil-amarela-retro-nike-cdf",
+    "name": "Camisa Seleção Brasileira Retrô - Torcedor Masculina Amarela com Detalhes em Verde",
+    "category": "selecoes",
+    "subcategory": "Americas",
+    "club": "Brasil",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 259.9,
+    "price": 179.9,
+    "discount": 31,
+    "installments": "3x de R$ 59,97 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-029/ct-029__camisa-brasil-amarela-retro-nike__front__product__v1.png",
+      "/assets/products/ct-029/ct-029__camisa-brasil-amarela-retro-nike__back__product__v1.png",
+      "/assets/products/ct-029/ct-029__camisa-brasil-amarela-retro-nike__sleeve-detail__product__v1.jpg"
+    ],
+    "description": "Camisa retrô da Seleção Brasileira — modelo Nike amarelo clássico com detalhes em verde escuro, escudo CDF bordado no peito e logo Nike em verde. Gola V com debrum verde e acabamento na manga em verde escuro. Versão para os saudosos da torcida canarinho.",
+    "tags": [
+      "brasil",
+      "selecao",
+      "retro",
+      "nike",
+      "amarela",
+      "vintage",
+      "copa",
+      "cdf"
+    ],
+    "related": [
+      "camisa-brasil-i-2026-amarela",
+      "camisa-brasil-ii-2026-azul",
+      "camisa-brasil-treino-jordan-2026-marinho"
+    ],
+    "colors": [
+      "#F2D435",
+      "#1B7A3E",
+      "#0B5A2B"
     ]
   }
 ]
