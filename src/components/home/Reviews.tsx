@@ -115,8 +115,13 @@ function Stars({ rating }: { rating: number }) {
 }
 
 function FeedbackMedia({ review }: { review: Review }) {
+  const isVideo = review.media.kind === "video";
   return (
-    <div className="relative aspect-square shrink-0 overflow-hidden rounded-xl border border-brand-paper/10 bg-brand-ink">
+    <div
+      className={`relative shrink-0 overflow-hidden rounded-xl border border-brand-paper/10 bg-brand-ink ${
+        isVideo ? "aspect-[9/16]" : "aspect-square"
+      }`}
+    >
       {review.media.kind === "image" ? (
         <img
           src={review.media.src}
