@@ -11,7 +11,6 @@ import {
   Headset,
   Menu,
   Search,
-  ShieldCheck,
   ShoppingBag,
   Trophy,
   X
@@ -558,7 +557,7 @@ function PlainMobileLink({
     <Link
       href={href}
       onClick={onClose}
-      className="font-poppins flex items-center justify-between rounded-lg px-3 py-2.5 text-[13px] font-medium text-brand-paper/85 transition-colors duration-150 ease-out hover:bg-brand-paper/[0.06] hover:text-brand-paper"
+      className="font-poppins flex min-h-[52px] items-center justify-between border-b border-brand-paper/[0.06] px-1 text-[14px] font-medium text-brand-paper transition-colors duration-150 ease-out active:bg-brand-paper/[0.04]"
     >
       <span>{label}</span>
       <ChevronRight className="h-4 w-4 text-brand-paper/45" aria-hidden="true" strokeWidth={1.8} />
@@ -571,15 +570,16 @@ function MobileDropdown({ config, onClose }: { config: DropdownConfig; onClose: 
   const allItems = [...config.columns[0], ...config.columns[1]];
 
   return (
-    <div>
+    <div className="border-b border-brand-paper/[0.06]">
       <button
         type="button"
         onClick={() => setOpen((value) => !value)}
-        className="font-poppins flex w-full items-center justify-between rounded-lg px-3 py-2.5 text-[13px] font-medium text-brand-paper/85 transition-colors duration-150 ease-out hover:bg-brand-paper/[0.06] hover:text-brand-paper"
+        aria-expanded={open}
+        className="font-poppins flex min-h-[52px] w-full items-center justify-between px-1 text-[14px] font-medium text-brand-paper transition-colors duration-150 ease-out active:bg-brand-paper/[0.04]"
       >
         <span>{config.label}</span>
         <ChevronDown
-          className={`h-4 w-4 text-brand-paper/45 transition-transform duration-200 ease-out ${open ? "rotate-180" : ""}`}
+          className={`h-4 w-4 text-brand-paper/55 transition-transform duration-200 ease-out ${open ? "rotate-180" : ""}`}
           aria-hidden="true"
           strokeWidth={1.8}
         />
@@ -590,41 +590,47 @@ function MobileDropdown({ config, onClose }: { config: DropdownConfig; onClose: 
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
             className="overflow-hidden"
           >
-            <div className="py-1 pl-3">
+            <ul className="ml-1 mb-3 border-l border-brand-paper/10">
               {allItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  onClick={onClose}
-                  className="font-poppins flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-brand-paper/[0.06]"
-                >
-                  <item.icon className="h-4 w-4 shrink-0 text-brand-paper/50" />
-                  <span className="min-w-0">
-                    <span className="block text-[13px] font-medium text-brand-paper/90">{item.label}</span>
-                    <span className="block text-[11px] text-brand-paper/55">{item.description}</span>
-                  </span>
-                </Link>
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    onClick={onClose}
+                    className="block min-h-[56px] py-3 pl-4 pr-2 transition-colors duration-150 ease-out active:bg-brand-paper/[0.04]"
+                  >
+                    <span className="font-poppins block text-[13.5px] font-semibold leading-tight text-brand-paper">
+                      {item.label}
+                    </span>
+                    <span className="font-lato mt-1 block text-[12px] font-normal leading-[1.4] text-brand-paper/55">
+                      {item.description}
+                    </span>
+                  </Link>
+                </li>
               ))}
               {config.feature ? (
-                <Link
-                  href={config.feature.href}
-                  onClick={onClose}
-                  className="mt-1 flex items-start gap-3 rounded-lg border border-brand-yellow/30 bg-brand-yellow/10 px-3 py-2.5"
-                >
-                  <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand-yellow" strokeWidth={1.8} />
-                  <span className="min-w-0">
-                    <span className="font-poppins block text-[13px] font-semibold text-brand-paper">
+                <li>
+                  <Link
+                    href={config.feature.href}
+                    onClick={onClose}
+                    className="block min-h-[56px] border-l-2 border-brand-yellow py-4 pl-4 pr-2 -ml-px transition-colors duration-150 ease-out active:bg-brand-paper/[0.04]"
+                  >
+                    <span className="font-lato flex items-center gap-2 text-[9.5px] font-bold uppercase tracking-[0.32em] text-brand-yellow">
+                      <span className="h-px w-4 bg-brand-yellow/55" aria-hidden="true" />
+                      {config.feature.badge}
+                    </span>
+                    <span className="font-bebas mt-2 block text-[20px] uppercase leading-[0.95] tracking-[0.005em] text-brand-paper">
                       {config.feature.title}
                     </span>
-                    <span className="font-poppins block text-[11px] text-brand-paper/65">
+                    <span className="font-lato mt-1.5 block text-[12px] font-normal leading-[1.4] text-brand-paper/60">
                       {config.feature.description}
                     </span>
-                  </span>
-                </Link>
+                  </Link>
+                </li>
               ) : null}
-            </div>
+            </ul>
           </motion.div>
         ) : null}
       </AnimatePresence>
