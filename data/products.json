@@ -1390,5 +1390,112 @@
       "#1B7A3E",
       "#0B5A2B"
     ]
+  },
+  {
+    "id": "ct-030",
+    "slug": "camisa-brasil-i-24-25-nike-amarela",
+    "name": "Camisa Seleção Brasileira I 24/25 - Torcedor Nike Masculina - Amarela com Detalhes em Verde",
+    "category": "selecoes",
+    "subcategory": "Americas",
+    "club": "Brasil",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 299.9,
+    "price": 199.9,
+    "discount": 33,
+    "installments": "3x de R$ 66,63 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-030/ct-030__camisa-brasil-i-24-25-nike__front__product__v1.png",
+      "/assets/products/ct-030/ct-030__camisa-brasil-i-24-25-nike__back-neymar__product__v1.png",
+      "/assets/products/ct-030/ct-030__camisa-brasil-i-24-25-nike__detail-crest__product__v1.png"
+    ],
+    "description": "Camisa I da Seleção Brasileira 24/25 — manto amarelo Nike com textura jacquard exclusiva, escudo CBF bordado e detalhes em verde escuro na gola e mangas. Versão torcedor masculino com tecnologia Dri-FIT para conforto em qualquer ocasião.",
+    "tags": [
+      "brasil",
+      "selecao",
+      "nike",
+      "amarela",
+      "copa",
+      "24/25",
+      "dri-fit",
+      "torcedor"
+    ],
+    "related": [
+      "camisa-brasil-ii-24-25-nike-azul",
+      "camisa-brasil-i-2026-amarela",
+      "camisa-brasil-amarela-retro-nike-cdf"
+    ],
+    "colors": [
+      "#F2D435",
+      "#1B7A3E",
+      "#0B5A2B"
+    ]
+  },
+  {
+    "id": "ct-031",
+    "slug": "camisa-brasil-ii-24-25-nike-azul",
+    "name": "Camisa Seleção Brasileira II 24/25 - Torcedor Nike Masculina - Azul",
+    "category": "selecoes",
+    "subcategory": "Americas",
+    "club": "Brasil",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 299.9,
+    "price": 199.9,
+    "discount": 33,
+    "installments": "3x de R$ 66,63 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-031/ct-031__camisa-brasil-ii-24-25-nike__front__product__v1.png",
+      "/assets/products/ct-031/ct-031__camisa-brasil-ii-24-25-nike__back-neymar__product__v1.png",
+      "/assets/products/ct-031/ct-031__camisa-brasil-ii-24-25-nike__detail-fabric__product__v1.png"
+    ],
+    "description": "Camisa II da Seleção Brasileira 24/25 — versão visitante azul royal Nike com padrão de listras horizontais texturizadas, escudo CBF aplicado e detalhes em verde-água na gola e punhos. Tecnologia Dri-FIT, modelagem torcedor masculino.",
+    "tags": [
+      "brasil",
+      "selecao",
+      "nike",
+      "azul",
+      "copa",
+      "24/25",
+      "dri-fit",
+      "torcedor",
+      "visitante"
+    ],
+    "related": [
+      "camisa-brasil-i-24-25-nike-amarela",
+      "camisa-brasil-ii-2026-azul",
+      "camisa-argentina-i-2026"
+    ],
+    "colors": [
+      "#1B49A8",
+      "#2BC5C5",
+      "#F2D435"
+    ]
   }
 ]
