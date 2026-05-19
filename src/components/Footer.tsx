@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { storeName } from "@/lib/catalog";
 
@@ -50,12 +51,14 @@ export function Footer() {
         {/* Col 1 — brand */}
         <div className="md:col-span-1">
           <div className="flex items-center gap-3">
-            <img
+            <Image
               src="/assets/logo-mundo.png"
               alt={storeName}
+              width={40}
+              height={40}
+              sizes="40px"
               className="h-10 w-auto"
               style={{ filter: "invert(1)" }}
-              loading="lazy"
             />
             <span className="font-poppins text-[14px] font-semibold text-brand-paper">
               {storeName}

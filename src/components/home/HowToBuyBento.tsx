@@ -33,17 +33,22 @@ function CardShell({
   title,
   body,
   className = "",
+  bare = false,
   children
 }: {
   step: string;
   title: string;
   body: string;
   className?: string;
+  bare?: boolean;
   children: React.ReactNode;
 }) {
+  const shellClasses = bare
+    ? "rounded-none border-0 border-t border-brand-paper/10 bg-transparent"
+    : "rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/50 hover:border-brand-yellow/30";
   return (
     <article
-      className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/50 p-6 transition-colors duration-300 ease-out hover:border-brand-yellow/30 sm:p-7 ${className}`}
+      className={`group relative flex h-full flex-col overflow-hidden p-6 transition-colors duration-300 ease-out sm:p-7 ${shellClasses} ${className}`}
     >
       <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-brand-yellow/[0.04] blur-3xl transition-opacity duration-500 ease-out group-hover:bg-brand-yellow/10" aria-hidden="true" />
 
@@ -74,7 +79,7 @@ function ProductCardMini({
 }) {
   return (
     <div className={`${offsetClass} transition-transform duration-500 ease-out ${hoverClass}`}>
-      <div className="overflow-hidden rounded-xl border border-brand-paper/10 bg-brand-paper/[0.03] backdrop-blur">
+      <div className="overflow-hidden rounded-xl border border-brand-paper/10 bg-brand-paper/[0.03]">
         <div className="relative aspect-[4/5] overflow-hidden bg-brand-paper">
           <img
             src={product.image}
@@ -192,7 +197,7 @@ export function HowToBuyBento() {
                   { label: "Endereço", value: "Rua, número, bairro" },
                   { label: "Cidade", value: "Sua cidade — UF" }
                 ].map((field) => (
-                  <div key={field.label} className="rounded-lg border border-brand-paper/10 bg-brand-ink/70 px-3 py-2 backdrop-blur">
+                  <div key={field.label} className="rounded-lg border border-brand-paper/10 bg-brand-ink/70 px-3 py-2">
                     <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-brand-paper/45">{field.label}</p>
                     <p className="mt-0.5 truncate text-[12px] font-medium text-brand-paper/80">{field.value}</p>
                   </div>
@@ -247,7 +252,7 @@ export function HowToBuyBento() {
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-ink/85 via-transparent to-transparent" aria-hidden="true" />
                 <div className="absolute inset-x-3 bottom-3 flex items-end justify-between gap-2">
-                  <div className="rounded-lg border border-brand-paper/10 bg-brand-ink/80 px-3 py-1.5 backdrop-blur">
+                  <div className="rounded-lg border border-brand-paper/10 bg-brand-ink/80 px-3 py-1.5">
                     <p className="text-[9px] font-bold uppercase tracking-[0.22em] text-brand-paper/55">Código</p>
                     <p className="font-poppins tabular mt-0.5 text-[13px] font-extrabold tracking-tight text-brand-paper">
                       BR123456789CN
@@ -268,6 +273,7 @@ export function HowToBuyBento() {
             title="Acompanhe até chegar"
             body="Rastreie o pedido e acompanhe cada etapa até a entrega na sua casa."
             className="md:col-span-4"
+            bare
           >
             <div className="relative">
               <img

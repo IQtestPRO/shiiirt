@@ -10,8 +10,8 @@ export function CartItem({ item }: { item: CartItemType }) {
   const updateQuantity = useCartStore((state) => state.updateQuantity);
 
   return (
-    <article className="grid grid-cols-[72px_1fr] gap-3 rounded-2xl border border-brand-ink/10 bg-brand-paper/50 p-3">
-      <img src={item.product.images[0]} alt="" className="h-24 w-[72px] rounded-xl bg-brand-cream object-cover" loading="lazy" />
+    <article className="grid grid-cols-[80px_1fr] gap-3 rounded-2xl border border-brand-ink/10 bg-brand-paper/50 p-3">
+      <img src={item.product.images[0]} alt="" className="h-24 w-[80px] rounded-xl bg-brand-cream object-cover" loading="lazy" />
       <div className="min-w-0">
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
@@ -34,7 +34,7 @@ export function CartItem({ item }: { item: CartItemType }) {
             <Trash2 className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
           </button>
         </div>
-        <div className="mt-2.5 flex items-center justify-between gap-2">
+        <div className="mt-2.5 flex flex-wrap items-center justify-between gap-2">
           <div className="inline-flex h-10 items-center rounded-full border border-brand-ink/12">
             <button
               type="button"

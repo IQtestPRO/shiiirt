@@ -141,7 +141,7 @@ export function ProductDetails({ product, related }: { product: Product; related
                 Se ficar entre dois tamanhos, escolha o maior.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-2 sm:grid-cols-4">
+            <div className="grid grid-cols-4 gap-2 sm:grid-cols-6">
               {product.sizes.map((label) => {
                 const isActive = size === label;
                 return (

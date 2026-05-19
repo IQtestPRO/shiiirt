@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const tiles = [
@@ -48,12 +49,13 @@ export function CategoryStrip() {
             href={tile.href}
             className="hover-lift group relative block overflow-hidden rounded-2xl bg-brand-ink"
           >
-            <div className="aspect-[4/5] overflow-hidden sm:aspect-[5/6]">
-              <img
+            <div className="relative aspect-[4/5] overflow-hidden sm:aspect-[5/6]">
+              <Image
                 src={tile.image}
                 alt=""
-                className="h-full w-full object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]"
-                loading="lazy"
+                fill
+                sizes="(min-width: 768px) 33vw, 100vw"
+                className="object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]"
               />
             </div>
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/40 to-transparent" aria-hidden="true" />

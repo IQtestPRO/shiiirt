@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
@@ -223,12 +224,15 @@ export function NavbarDarkShadow() {
         </button>
 
         <Link href="/" aria-label={`${storeName} — início`} className="flex shrink-0 items-center">
-          <img
+          <Image
             src="/assets/logo-mundo.png"
             alt={storeName}
+            width={144}
+            height={144}
+            priority
+            sizes="(min-width: 1024px) 144px, (min-width: 640px) 64px, 48px"
             className="h-12 w-auto sm:h-16 lg:-my-8 lg:h-36"
             style={{ filter: "invert(1)" }}
-            loading="eager"
           />
         </Link>
 
@@ -524,7 +528,7 @@ function MobileNav({ onClose }: { onClose: () => void }) {
       exit={{ opacity: 0, height: 0 }}
       className="overflow-hidden border-t border-brand-paper/10 lg:hidden"
     >
-      <div className="container-page py-4">
+      <div className="container-page max-h-[calc(100dvh-140px)] overflow-y-auto overscroll-contain py-4">
         <PlainMobileLink href={leftLink.href} label={leftLink.label} onClose={onClose} />
         {dropdowns.map((dd) => (
           <MobileDropdown key={dd.label} config={dd} onClose={onClose} />

@@ -21,14 +21,19 @@ export default async function SearchPage({
   return (
     <div className="container-page py-8">
       <Breadcrumbs items={[{ label: "Busca" }]} />
-      <section className="mb-6 rounded-lg bg-white p-5 shadow-card ring-1 ring-slate-200/75">
-        <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-brand-green">Resultado de busca</p>
-        <h1 className="mt-1 text-3xl font-extrabold text-brand-ink sm:text-4xl">
-          {query ? `Busca por "${query}"` : "Busque sua próxima camisa"}
-        </h1>
-        <p className="mt-2 max-w-2xl text-base leading-7 text-slate-600">
-          Pesquise por nome, clube, seleção, liga, categoria ou tags do catálogo.
-        </p>
+      <section className="mb-8 border-b border-black/[0.08] pb-7 sm:mb-10 sm:pb-9">
+        <div className="font-lato flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.32em] text-brand-ink/55">
+          <span className="h-px w-7 bg-brand-ink/25" aria-hidden="true" />
+          Resultado de busca
+        </div>
+        <div className="mt-3 flex flex-col gap-4 sm:mt-4">
+          <h1 className="font-bebas text-brand-ink text-[clamp(2.4rem,5vw,3.6rem)] uppercase leading-[0.95] tracking-[0.005em]">
+            {query ? `Busca por "${query}"` : "Busque sua próxima camisa"}
+          </h1>
+          <p className="font-lato max-w-2xl text-[14px] leading-[1.6] text-brand-ink/60">
+            Pesquise por nome, clube, seleção, liga, categoria ou tags do catálogo.
+          </p>
+        </div>
       </section>
       {query ? (
         <CategoryPageContent products={results} />

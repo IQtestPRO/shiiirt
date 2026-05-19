@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { LampGlow } from "@/components/effects/LampGlow";
@@ -12,11 +13,13 @@ export function HeroBanner() {
       <div className="container-wide pt-3 pb-2">
         <div className="relative overflow-hidden rounded-2xl bg-brand-ink sm:rounded-[24px]">
           <div className="relative aspect-[4/5] sm:aspect-[16/10] lg:aspect-[21/9]">
-            <img
+            <Image
               src="/assets/hero-jersey.png"
               alt="Camisa amarela em estúdio cinematográfico com spotlight"
-              className="absolute inset-0 h-full w-full object-cover object-[60%_center] opacity-95 sm:object-center"
-              loading="eager"
+              fill
+              priority
+              sizes="(min-width: 1024px) 1400px, 100vw"
+              className="object-cover object-[60%_center] opacity-95 sm:object-center"
             />
             <LampGlow
               className="left-1/2 -translate-x-1/2"

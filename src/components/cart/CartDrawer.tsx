@@ -34,7 +34,7 @@ export function CartDrawer() {
   return (
     <div className="fixed inset-0 z-[91]">
       <button className="absolute inset-0 bg-brand-ink/55" aria-label="Fechar carrinho" onClick={closeCart} />
-      <aside className="absolute right-0 top-0 flex h-full w-[min(100vw,440px)] flex-col bg-brand-paper shadow-soft">
+      <aside className="absolute right-0 top-0 flex h-[100dvh] w-[min(100vw,440px)] flex-col bg-brand-paper shadow-soft">
         <header className="flex items-center justify-between gap-3 bg-brand-ink px-4 py-4 text-brand-paper sm:px-5">
           <div className="min-w-0">
             <p className="font-lato text-[10px] font-bold uppercase tracking-[0.28em] text-brand-yellow">Carrinho</p>
@@ -59,7 +59,7 @@ export function CartDrawer() {
             </div>
           )}
         </div>
-        <footer className="space-y-3 border-t border-brand-ink/10 bg-brand-paper p-4">
+        <footer className="space-y-3 border-t border-brand-ink/10 bg-brand-paper p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
           <div className="flex items-center justify-between gap-3 font-poppins text-[13px] font-bold text-brand-ink/65">
             <span>Subtotal</span>
             <span className="tabular text-[18px] font-extrabold text-brand-ink sm:text-xl">{formatCurrency(total())}</span>

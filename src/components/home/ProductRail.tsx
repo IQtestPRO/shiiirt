@@ -89,13 +89,13 @@ export function ProductRail({
         <div
           ref={railRef}
           className="no-scrollbar -mx-2 flex gap-4 overflow-x-auto px-2 pb-2"
-          style={{ scrollSnapType: "none", scrollBehavior: "smooth" }}
+          style={{ scrollSnapType: "x mandatory", scrollBehavior: "smooth" }}
         >
           {products.map((product) => (
             <div
               key={product.id}
               data-rail-item
-              className="shrink-0 w-[72vw] sm:w-[calc((100%-1rem)/2)] md:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-3rem)/4)] xl:w-[calc((100%-4rem)/5)]"
+              className="snap-start shrink-0 w-[78vw] sm:w-[calc((100%-1rem)/2)] md:w-[calc((100%-2rem)/3)] lg:w-[calc((100%-3rem)/4)] xl:w-[calc((100%-4rem)/5)]"
             >
               <ProductCard product={product} />
             </div>

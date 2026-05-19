@@ -74,7 +74,7 @@ export function ProductGallery({ product }: { product: Product }) {
                   onClick={() => setActive(image)}
                   aria-label={`Selecionar imagem ${index + 1}`}
                   aria-pressed={isActive}
-                  className={`relative aspect-square overflow-hidden rounded-lg bg-[#f6f4ef] transition-all duration-200 ease-out ${
+                  className={`relative aspect-square overflow-hidden rounded-lg bg-[#f6f4ef] transition-[box-shadow,outline-color] duration-150 ease-out ${
                     isActive
                       ? "ring-[1.5px] ring-brand-ink"
                       : "ring-1 ring-black/[0.06] hover:ring-black/20"

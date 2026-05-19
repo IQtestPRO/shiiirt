@@ -1,4 +1,4 @@
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { LocationTag } from "@/components/LocationTag";
 
@@ -11,7 +11,6 @@ export function AnnouncementBar() {
         <span className="hidden h-3.5 w-px bg-brand-paper/20 sm:inline-block" aria-hidden="true" />
 
         <span className="hidden items-center gap-2 md:inline-flex">
-          <Sparkles className="h-3.5 w-3.5 text-brand-yellow" aria-hidden="true" strokeWidth={1.8} />
           <span>
             Ganhe 10% off — cupom <span className="tabular text-brand-yellow">PRIMEIRACAMISA</span>
           </span>

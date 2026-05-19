@@ -75,14 +75,7 @@ const reviews: Review[] = [
   }
 ];
 
-const swatches = [
-  "from-brand-yellow/30 to-brand-yellow/5",
-  "from-brand-yellow/20 to-brand-paper/5",
-  "from-brand-paper/25 to-brand-yellow/5",
-  "from-brand-yellow/25 to-transparent",
-  "from-brand-paper/15 to-brand-yellow/10",
-  "from-brand-yellow/35 to-transparent"
-];
+const swatches = ["bg-brand-ink/[0.06]"];
 
 function getInitials(name: string) {
   const parts = name.trim().split(/\s+/);
@@ -152,7 +145,7 @@ function FeedbackMedia({ review }: { review: Review }) {
 function InitialsAvatar({ name, swatch }: { name: string; swatch: string }) {
   return (
     <span
-      className={`font-poppins grid h-11 w-11 shrink-0 place-items-center rounded-full bg-gradient-to-br ${swatch} text-[13px] font-bold tracking-tight text-brand-paper ring-1 ring-brand-paper/15`}
+      className={`font-poppins grid h-11 w-11 shrink-0 place-items-center rounded-full ${swatch} text-[13px] font-bold tracking-tight text-brand-paper ring-1 ring-brand-paper/15`}
       aria-hidden="true"
     >
       {getInitials(name)}
@@ -208,8 +201,8 @@ export function Reviews() {
               key={review.id}
               className="flex h-auto w-[86vw] shrink-0 flex-col gap-4 rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/60 p-5 transition-colors duration-300 ease-out hover:border-brand-paper/20 sm:gap-5 sm:p-7 md:w-[calc(50%-0.625rem)]"
             >
-              <div className="flex items-stretch gap-4 sm:gap-5">
-                <div className="w-[42%] max-w-[180px] shrink-0">
+              <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:gap-5">
+                <div className="w-full shrink-0 sm:w-[42%] sm:max-w-[180px]">
                   <FeedbackMedia review={review} />
                 </div>
                 <div className="flex min-w-0 flex-1 flex-col gap-2.5 sm:gap-3">

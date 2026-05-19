@@ -24,7 +24,7 @@ export function PromoBand() {
             <p className="pretty mt-4 max-w-md text-sm font-medium leading-7 text-brand-paper/70">
               Cada lançamento entra com checagem de modelagem, qualidade e identidade da marca. Sem encheção de catálogo.
             </p>
-            <span className="mt-8 inline-flex items-center gap-3 rounded-full bg-brand-yellow pl-5 pr-1.5 py-1.5 text-xs font-extrabold uppercase tracking-[0.16em] text-brand-ink transition-colors duration-200 ease-out group-hover:bg-white">
+            <span className="mt-8 inline-flex items-center gap-3 rounded-full bg-brand-yellow pl-5 pr-1.5 py-1.5 text-xs font-extrabold uppercase tracking-[0.16em] text-brand-ink transition-colors duration-200 ease-out group-hover:bg-brand-paper">
               Ver ofertas
               <span className="grid h-9 w-9 place-items-center rounded-full bg-brand-ink text-brand-yellow transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
@@ -33,7 +33,7 @@ export function PromoBand() {
           </div>
         </Link>
 
-        <ol className="relative grid gap-3 rounded-[28px] border border-brand-ink/10 bg-white p-8 shadow-card sm:p-10">
+        <ol className="relative grid gap-3 rounded-[28px] border border-brand-ink/10 bg-brand-mist p-8 shadow-card sm:p-10">
           <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-brand-ink/55">Como comprar</p>
           <h2 className="font-poppins balance text-[clamp(1.5rem,2.6vw,2rem)] font-extrabold leading-[1.05] tracking-[-0.02em] text-brand-ink">
             Da seleção ao WhatsApp em três passos.

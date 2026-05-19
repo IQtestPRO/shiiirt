@@ -54,7 +54,7 @@ export function Newsletter() {
               />
               <button
                 type="submit"
-                className="group/btn inline-flex min-h-12 items-center justify-between gap-2 rounded-full bg-brand-yellow pl-5 pr-1.5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-brand-ink transition-colors duration-200 ease-out hover:bg-white"
+                className="group/btn inline-flex min-h-12 items-center justify-between gap-2 rounded-full bg-brand-yellow pl-5 pr-1.5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-brand-ink transition-colors duration-200 ease-out hover:bg-brand-paper"
               >
                 <span>Quero 10% off</span>
                 <span className="grid h-9 w-9 place-items-center rounded-full bg-brand-ink text-brand-yellow transition-transform duration-200 ease-out group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5">

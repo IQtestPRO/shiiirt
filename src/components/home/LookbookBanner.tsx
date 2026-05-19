@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
@@ -5,12 +6,15 @@ export function LookbookBanner() {
   return (
     <section className="container-wide py-10 sm:py-16">
       <div className="relative overflow-hidden rounded-2xl sm:rounded-[28px]">
-        <img
-          src="/assets/jerss.png"
-          alt="Três camisas penduradas em araras de latão em ambiente minimalista"
-          className="aspect-[4/5] w-full object-cover sm:aspect-[16/10] lg:aspect-[21/9]"
-          loading="lazy"
-        />
+        <div className="relative aspect-[4/5] w-full sm:aspect-[16/10] lg:aspect-[21/9]">
+          <Image
+            src="/assets/jerss.png"
+            alt="Três camisas penduradas em araras de latão em ambiente minimalista"
+            fill
+            sizes="(min-width: 1024px) 1400px, 100vw"
+            className="object-cover"
+          />
+        </div>
         {/* Mobile: strong bottom gradient */}
         <div
           className="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/65 via-45% to-transparent sm:hidden"
