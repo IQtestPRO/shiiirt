@@ -13,7 +13,6 @@ import {
   Search,
   ShieldCheck,
   ShoppingBag,
-  Sparkles,
   Trophy,
   X
 } from "lucide-react";
@@ -453,7 +452,7 @@ function DropdownContent({ config }: { config: DropdownConfig }) {
       }
     >
       <div className="p-2">
-        <p className="font-poppins px-2 pt-2 pb-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-paper/45">
+        <p className="font-lato flex items-center gap-2.5 px-3 pt-2 pb-2 text-[9.5px] font-bold uppercase tracking-[0.32em] text-brand-paper/55"><span className="h-px w-5 bg-brand-paper/25" aria-hidden="true" />
           {heading1}
         </p>
         <ul role="list" className="grid gap-0.5">
@@ -465,7 +464,7 @@ function DropdownContent({ config }: { config: DropdownConfig }) {
         </ul>
       </div>
       <div className="border-l border-brand-paper/10 p-2">
-        <p className="font-poppins px-2 pt-2 pb-1.5 text-[10px] font-semibold uppercase tracking-[0.28em] text-brand-paper/45">
+        <p className="font-lato flex items-center gap-2.5 px-3 pt-2 pb-2 text-[9.5px] font-bold uppercase tracking-[0.32em] text-brand-paper/55"><span className="h-px w-5 bg-brand-paper/25" aria-hidden="true" />
           {heading2}
         </p>
         <ul role="list" className="grid gap-0.5">
@@ -480,22 +479,21 @@ function DropdownContent({ config }: { config: DropdownConfig }) {
       {config.feature ? (
         <Link
           href={config.feature.href}
-          className="group relative flex flex-col gap-3 overflow-hidden rounded-lg border-l border-brand-paper/10 bg-gradient-to-br from-brand-yellow/[0.08] to-transparent p-5"
+          className="group relative flex flex-col gap-4 border-l border-brand-paper/10 px-5 py-5"
         >
-          <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-brand-yellow/15 blur-3xl transition-colors duration-300 ease-out group-hover:bg-brand-yellow/25" aria-hidden="true" />
-          <span className="font-poppins relative inline-flex w-fit items-center gap-1.5 rounded-full border border-brand-yellow/40 bg-brand-yellow/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-yellow">
-            <Sparkles className="h-3 w-3" aria-hidden="true" strokeWidth={1.8} />
+          <div className="font-lato flex items-center gap-3 text-[9.5px] font-bold uppercase tracking-[0.32em] text-brand-yellow">
+            <span className="h-px w-6 bg-brand-yellow/55" aria-hidden="true" />
             {config.feature.badge}
-          </span>
-          <p className="font-poppins relative text-[15px] font-extrabold leading-tight tracking-tight text-brand-paper">
+          </div>
+          <p className="font-bebas text-[clamp(1.6rem,1.8vw,2rem)] uppercase leading-[0.95] tracking-[0.005em] text-brand-paper">
             {config.feature.title}
           </p>
-          <p className="font-poppins relative text-[12px] font-normal leading-5 text-brand-paper/65">
+          <p className="font-lato text-[12.5px] font-normal leading-[1.55] text-brand-paper/60">
             {config.feature.description}
           </p>
-          <span className="font-poppins relative mt-auto inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-yellow transition-transform duration-200 ease-out group-hover:translate-x-0.5">
-            Conferir
-            <ChevronRight className="h-3 w-3" aria-hidden="true" strokeWidth={2} />
+          <span className="font-lato mt-auto inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.22em] text-brand-paper underline decoration-brand-yellow/45 decoration-1 underline-offset-[6px] transition-[text-decoration-color] duration-150 ease-out group-hover:decoration-brand-yellow">
+            Ver categoria
+            <ChevronRight className="h-3 w-3 text-brand-yellow" aria-hidden="true" strokeWidth={2} />
           </span>
         </Link>
       ) : null}
@@ -507,15 +505,14 @@ function LinkRow({ item }: { item: LinkItem }) {
   return (
     <Link
       href={item.href}
-      className="group flex items-start gap-3 rounded-md px-2 py-2 transition-colors duration-150 ease-out hover:bg-brand-paper/[0.06]"
+      className="group relative block border-l-2 border-transparent py-2 pl-3 pr-2 transition-[background-color,border-color,padding] duration-150 ease-out hover:border-brand-yellow hover:bg-brand-paper/[0.04] hover:pl-4"
     >
-      <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-md border border-brand-paper/10 bg-brand-paper/[0.04] transition-colors duration-150 ease-out group-hover:border-brand-yellow/40 group-hover:bg-brand-yellow/15">
-        <item.icon className="h-4 w-4 text-brand-paper/70 transition-colors duration-150 ease-out group-hover:text-brand-yellow" />
-      </span>
-      <span className="min-w-0">
-        <p className="font-poppins text-[13px] font-semibold leading-snug text-brand-paper">{item.label}</p>
-        <p className="font-poppins mt-0.5 text-[11px] font-normal text-brand-paper/55">{item.description}</p>
-      </span>
+      <p className="font-poppins text-[13px] font-semibold leading-snug text-brand-paper transition-colors duration-150 ease-out group-hover:text-brand-paper">
+        {item.label}
+      </p>
+      <p className="font-lato mt-0.5 text-[11.5px] font-normal leading-[1.4] text-brand-paper/55">
+        {item.description}
+      </p>
     </Link>
   );
 }
