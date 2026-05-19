@@ -1092,52 +1092,6 @@
   },
   {
     "id": "ct-024",
-    "slug": "camisa-tailândia-especial-azul",
-    "name": "Camisa Mundo das Importadas Especial Azul",
-    "category": "streetwear",
-    "subcategory": "Edicao Especial",
-    "club": "Mundo das Importadas",
-    "league": "Colecao Propria",
-    "gender": "unissex",
-    "oldPrice": 229.9,
-    "price": 169.9,
-    "discount": 26,
-    "installments": "2x de R$ 84,95 sem juros",
-    "freeShipping": true,
-    "sizes": [
-      "P",
-      "M",
-      "G",
-      "GG",
-      "XG",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "customizable": true,
-    "readyToShip": true,
-    "images": [
-      "/api/product-art/camisa-tailândia-especial-azul"
-    ],
-    "description": "Modelo autoral da loja em azul CBF, com detalhes amarelos e verdes para reforcar a identidade da Central.",
-    "tags": [
-      "mundo das importadas",
-      "personalizavel",
-      "pronta entrega",
-      "edicao especial"
-    ],
-    "related": [
-      "camisa-brasil-ii-2026-azul",
-      "camisa-brasil-i-2026-amarela"
-    ],
-    "colors": [
-      "#004AAD",
-      "#F6D34A",
-      "#2E9F5B"
-    ]
-  },
-  {
-    "id": "ct-024",
     "slug": "camisa-sem-neymar-eu-nem-assisto-a-copa",
     "name": "Camisa Sem Neymar Eu Nem Assisto a Copa - Edição Streetwear",
     "category": "streetwear",
