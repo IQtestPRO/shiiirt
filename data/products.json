@@ -571,8 +571,7 @@
       "polo"
     ],
     "related": [
-      "camisa-real-madrid-iii-2026-azul",
-      "camisa-birmingham-i-2026"
+      "camisa-real-madrid-iii-2026-azul"
     ],
     "colors": [
       "#5CB7E8",
@@ -710,59 +709,12 @@
       "personalizavel"
     ],
     "related": [
-      "camisa-birmingham-i-2026",
       "camisa-psg-i-2026"
     ],
     "colors": [
       "#8FD3F4",
       "#FFFFFF",
       "#263D72"
-    ]
-  },
-  {
-    "id": "ct-016",
-    "slug": "camisa-birmingham-i-2026",
-    "name": "Camisa Birmingham I 2026 Azul - Torcedor Masculina",
-    "category": "europa",
-    "subcategory": "Championship",
-    "club": "Birmingham",
-    "league": "Championship",
-    "gender": "masculino",
-    "oldPrice": 0,
-    "price": 189.9,
-    "discount": 0,
-    "installments": "2x de R$ 94,95 sem juros",
-    "freeShipping": true,
-    "sizes": [
-      "P",
-      "M",
-      "G",
-      "GG",
-      "XG",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "customizable": true,
-    "readyToShip": true,
-    "images": [
-      "/api/product-art/camisa-birmingham-i-2026"
-    ],
-    "description": "Azul vivo com detalhes amarelos, escolha forte para quem curte ligas inglesas.",
-    "tags": [
-      "birmingham",
-      "championship",
-      "europa",
-      "personalizavel"
-    ],
-    "related": [
-      "camisa-manchester-city-i-2026",
-      "camisa-napoli-i-2025"
-    ],
-    "colors": [
-      "#034EA2",
-      "#F4C430",
-      "#FFFFFF"
     ]
   },
   {
