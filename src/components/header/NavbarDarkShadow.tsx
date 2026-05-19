@@ -254,7 +254,7 @@ export function NavbarDarkShadow() {
             <button
               type="submit"
               aria-label="Buscar"
-              className="absolute right-1.5 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-brand-ink text-brand-paper transition-colors duration-150 ease-out hover:bg-neutral-800"
+              className="absolute right-1.5 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-brand-ink text-brand-paper transition-colors duration-150 ease-out hover:bg-brand-inkSoft"
             >
               <Search className="h-4 w-4" strokeWidth={2} />
             </button>
@@ -413,7 +413,7 @@ function DropdownTrigger({
       >
         {config.label}
         <ChevronDown
-          className={`h-3.5 w-3.5 text-brand-paper/55 transition-transform duration-200 ${
+          className={`h-3.5 w-3.5 text-brand-paper/55 transition-transform duration-200 ease-out ${
             isActive ? "rotate-180" : ""
           }`}
           strokeWidth={2}
@@ -482,7 +482,7 @@ function DropdownContent({ config }: { config: DropdownConfig }) {
           href={config.feature.href}
           className="group relative flex flex-col gap-3 overflow-hidden rounded-lg border-l border-brand-paper/10 bg-gradient-to-br from-brand-yellow/[0.08] to-transparent p-5"
         >
-          <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-brand-yellow/15 blur-3xl transition-opacity duration-300 group-hover:bg-brand-yellow/25" aria-hidden="true" />
+          <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-brand-yellow/15 blur-3xl transition-colors duration-300 ease-out group-hover:bg-brand-yellow/25" aria-hidden="true" />
           <span className="font-poppins relative inline-flex w-fit items-center gap-1.5 rounded-full border border-brand-yellow/40 bg-brand-yellow/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-yellow">
             <Sparkles className="h-3 w-3" aria-hidden="true" strokeWidth={1.8} />
             {config.feature.badge}
@@ -582,7 +582,7 @@ function MobileDropdown({ config, onClose }: { config: DropdownConfig; onClose: 
       >
         <span>{config.label}</span>
         <ChevronDown
-          className={`h-4 w-4 text-brand-paper/45 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`h-4 w-4 text-brand-paper/45 transition-transform duration-200 ease-out ${open ? "rotate-180" : ""}`}
           aria-hidden="true"
           strokeWidth={1.8}
         />

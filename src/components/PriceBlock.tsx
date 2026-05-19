@@ -11,12 +11,12 @@ export function PriceBlock({ oldPrice = 0, price, installments, compact = false 
   return (
     <div className={compact ? "space-y-0.5" : "space-y-1"}>
       {oldPrice > price ? (
-        <p className="text-xs font-medium text-slate-500 line-through">{formatCurrency(oldPrice)}</p>
+        <p className="font-poppins tabular text-[11px] font-medium text-brand-ink/45 line-through">{formatCurrency(oldPrice)}</p>
       ) : null}
-      <p className={compact ? "text-xl font-extrabold text-brand-ink" : "text-3xl font-extrabold text-brand-ink"}>
+      <p className={`font-poppins tabular font-extrabold tracking-tight text-brand-ink ${compact ? "text-xl" : "text-3xl"}`}>
         {formatCurrency(price)}
       </p>
-      <p className="text-[11px] font-semibold text-slate-600">{installments}</p>
+      <p className="font-poppins text-[11px] font-semibold text-brand-ink/55">{installments}</p>
     </div>
   );
 }

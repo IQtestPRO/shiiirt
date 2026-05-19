@@ -74,22 +74,22 @@ function BrandRow({ direction }: { direction: "forward" | "reverse" }) {
 
 export function LogoCloud() {
   return (
-    <section className="bg-white">
-      <div className="container-wide py-14 md:py-20">
-        <div className="grid gap-10 md:grid-cols-[0.65fr_1.35fr] md:items-center md:gap-14">
+    <section className="bg-brand-mist">
+      <div className="container-wide py-12 sm:py-14 md:py-20">
+        <div className="grid gap-8 md:grid-cols-[0.65fr_1.35fr] md:items-center md:gap-14">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.32em] text-brand-ink/55">Marcas que importamos</p>
-            <h2 className="font-poppins balance mt-3 text-[clamp(1.6rem,3vw,2.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-brand-ink">
+            <p className="font-lato text-[10px] font-bold uppercase tracking-[0.28em] text-brand-ink/55 sm:text-[11px] sm:tracking-[0.32em]">Marcas que importamos</p>
+            <h2 className="font-poppins balance mt-2.5 text-[clamp(1.6rem,3vw,2.4rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-brand-ink sm:mt-3">
               Trabalhamos com quem joga no campo.
             </h2>
-            <p className="pretty mt-4 max-w-[42ch] text-[14px] font-medium leading-7 text-brand-ink/60">
+            <p className="font-poppins pretty mt-3 max-w-[42ch] text-[13.5px] font-medium leading-7 text-brand-ink/60 sm:mt-4 sm:text-[14px]">
               Cada lote chega com etiqueta verificada e modelagem real, das principais fabricantes esportivas do mundo.
             </p>
           </div>
 
           <div className="relative overflow-hidden">
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-white to-transparent" aria-hidden="true" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-white to-transparent" aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-brand-mist to-transparent sm:w-24" aria-hidden="true" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-brand-mist to-transparent sm:w-24" aria-hidden="true" />
             <BrandRow direction="forward" />
             <BrandRow direction="reverse" />
           </div>

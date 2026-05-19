@@ -34,14 +34,14 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="container-page py-16 md:py-24">
-      <div className="grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:gap-14">
+    <section className="container-page py-12 sm:py-16 md:py-24">
+      <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:gap-14">
         <div>
-          <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-brand-ink/55">Perguntas frequentes</p>
+          <p className="font-lato text-[10px] font-bold uppercase tracking-[0.28em] text-brand-ink/55 sm:text-[11px]">Perguntas frequentes</p>
           <h2 className="font-poppins balance mt-2 text-[clamp(1.7rem,3.6vw,2.8rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-brand-ink">
             Antes de comprar, isso aqui costuma resolver.
           </h2>
-          <p className="pretty mt-4 max-w-md text-[15px] font-medium leading-7 text-brand-ink/65">
+          <p className="font-poppins pretty mt-4 max-w-md text-[14px] font-medium leading-7 text-brand-ink/65 sm:text-[15px]">
             Se mesmo assim ficar uma dúvida, chama no WhatsApp. Atendente humano, segunda a sexta, das 9h às 18h.
           </p>
         </div>
@@ -54,25 +54,25 @@ export function FAQ() {
                   type="button"
                   onClick={() => setOpen(isOpen ? null : index)}
                   aria-expanded={isOpen}
-                  className="flex w-full items-center justify-between gap-6 py-5 text-left transition-colors duration-150 ease-out hover:text-brand-blue"
+                  className="flex w-full items-center justify-between gap-4 py-5 text-left transition-colors duration-150 ease-out hover:text-brand-ink/70 sm:gap-6"
                 >
-                  <span className="text-[15px] font-bold leading-snug text-brand-ink">{item.q}</span>
+                  <span className="font-poppins text-[14px] font-bold leading-snug text-brand-ink sm:text-[15px]">{item.q}</span>
                   <span
-                    className={`grid h-9 w-9 shrink-0 place-items-center rounded-full border transition-colors duration-200 ease-out ${
+                    className={`grid h-10 w-10 shrink-0 place-items-center rounded-full border transition-colors duration-200 ease-out md:h-9 md:w-9 ${
                       isOpen
                         ? "border-brand-ink bg-brand-ink text-brand-paper"
-                        : "border-brand-ink/15 bg-white text-brand-ink"
+                        : "border-brand-ink/15 bg-brand-paper text-brand-ink"
                     }`}
                   >
                     {isOpen ? <Minus className="h-4 w-4" strokeWidth={1.8} /> : <Plus className="h-4 w-4" strokeWidth={1.8} />}
                   </span>
                 </button>
                 <div
-                  className="overflow-hidden transition-[grid-template-rows] duration-300 ease-out"
-                  style={{ display: "grid", gridTemplateRows: isOpen ? "1fr" : "0fr" }}
+                  className="grid overflow-hidden transition-[grid-template-rows] duration-300 ease-out"
+                  style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
                 >
                   <div className="min-h-0">
-                    <p className="pretty pb-5 pr-12 text-[14px] font-medium leading-7 text-brand-ink/70">{item.a}</p>
+                    <p className="font-poppins pretty pb-5 pr-4 text-[13.5px] font-medium leading-7 text-brand-ink/70 sm:pr-12 sm:text-[14px]">{item.a}</p>
                   </div>
                 </div>
               </div>

@@ -43,32 +43,32 @@ export function ProductQuickViewModal({ product, onClose }: { product: Product; 
   }
 
   const modal = (
-    <div className="fixed inset-0 z-[92] grid place-items-center bg-slate-950/60 px-4 py-8">
+    <div className="fixed inset-0 z-[92] grid place-items-center bg-brand-ink/60 px-4 py-8">
       <button className="absolute inset-0" aria-label="Fechar espiar produto" onClick={onClose} />
       <section
         role="dialog"
         aria-modal="true"
         aria-labelledby="quick-title"
-        className="relative grid max-h-[90dvh] w-full max-w-4xl overflow-y-auto rounded-lg bg-white shadow-soft md:grid-cols-[0.9fr_1.1fr]"
+        className="relative grid max-h-[90dvh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-brand-paper shadow-soft md:grid-cols-[0.9fr_1.1fr]"
       >
         <button
           type="button"
           onClick={onClose}
           aria-label="Fechar"
-          className="absolute right-3 top-3 z-10 grid h-11 w-11 place-items-center rounded-md bg-white/90 text-slate-700 shadow-card"
+          className="absolute right-3 top-3 z-10 grid h-10 w-10 place-items-center rounded-full bg-brand-paper/90 text-brand-ink/70 ring-1 ring-brand-ink/10 transition-colors duration-150 ease-out hover:text-brand-ink"
         >
-          <X className="h-5 w-5" aria-hidden="true" />
+          <X className="h-5 w-5" aria-hidden="true" strokeWidth={1.8} />
         </button>
         <div className="bg-brand-cream p-4 sm:p-6">
           <ProductImage product={product} priority />
         </div>
         <div className="space-y-5 p-5 sm:p-7">
           <div>
-            <p className="text-xs font-extrabold uppercase tracking-[0.14em] text-brand-green">Espiar produto</p>
-            <h2 id="quick-title" className="mt-1 text-2xl font-extrabold text-brand-ink">
+            <p className="font-lato text-[10px] font-bold uppercase tracking-[0.28em] text-brand-ink/55">Espiar produto</p>
+            <h2 id="quick-title" className="font-poppins mt-1 text-xl font-extrabold leading-tight tracking-tight text-brand-ink sm:text-2xl">
               {product.name}
             </h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">{product.description}</p>
+            <p className="font-poppins pretty mt-2 text-[13px] leading-6 text-brand-ink/65">{product.description}</p>
           </div>
           <PriceBlock oldPrice={product.oldPrice} price={product.price} installments={product.installments} />
           <SizeSelector sizes={product.sizes} value={size} onChange={(value) => {
@@ -83,19 +83,19 @@ export function ProductQuickViewModal({ product, onClose }: { product: Product; 
               setError("");
             }}
           />
-          {error ? <p className="rounded-md bg-red-50 p-3 text-sm font-bold text-red-700">{error}</p> : null}
+          {error ? <p className="font-poppins rounded-lg border border-brand-ink/15 bg-brand-cream px-3 py-2 text-[13px] font-medium text-brand-ink">{error}</p> : null}
           <div className="grid gap-2 sm:grid-cols-2">
             <button
               type="button"
               onClick={buy}
-              className="min-h-12 rounded-md bg-brand-ink px-4 text-sm font-extrabold text-brand-paper transition hover:bg-brand-blue"
+              className="font-poppins min-h-12 rounded-full bg-brand-ink px-4 text-[12.5px] font-extrabold uppercase tracking-[0.14em] text-brand-paper transition-colors duration-200 ease-out hover:bg-brand-inkSoft"
             >
-              Adicionar ao carrinho
+              Adicionar
             </button>
             <Link
               href={`/produtos/${product.slug}`}
               onClick={onClose}
-              className="grid min-h-12 place-items-center rounded-md border border-brand-blue px-4 text-sm font-extrabold text-brand-blue transition hover:bg-blue-50"
+              className="font-poppins grid min-h-12 place-items-center rounded-full border border-brand-ink/20 px-4 text-[12.5px] font-extrabold uppercase tracking-[0.14em] text-brand-ink transition-colors duration-200 ease-out hover:border-brand-ink/50"
             >
               Ver detalhes
             </Link>

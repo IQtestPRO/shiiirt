@@ -45,8 +45,8 @@ const groups: FooterGroup[] = [
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/[0.06] bg-neutral-950 text-brand-paper">
-      <div className="container-page relative z-10 grid gap-12 py-20 md:grid-cols-5 md:gap-10">
+    <footer className="relative overflow-hidden border-t border-brand-paper/[0.06] bg-brand-ink text-brand-paper">
+      <div className="container-page relative z-10 grid gap-10 py-14 sm:gap-12 sm:py-20 md:grid-cols-5 md:gap-10">
         {/* Col 1 — brand */}
         <div className="md:col-span-1">
           <div className="flex items-center gap-3">
@@ -61,7 +61,7 @@ export function Footer() {
               {storeName}
             </span>
           </div>
-          <p className="font-poppins mt-6 text-[12px] font-normal leading-6 text-brand-paper/40">
+          <p className="font-poppins mt-5 text-[12px] font-normal leading-6 text-brand-paper/40 sm:mt-6">
             © 2026 {storeName}. Todos os direitos reservados.
           </p>
         </div>
@@ -69,8 +69,8 @@ export function Footer() {
         {/* Cols 2–5 — link groups */}
         {groups.map((group) => (
           <nav key={group.title} aria-label={group.title} className="md:col-span-1">
-            <h2 className="font-poppins text-[14px] font-semibold text-brand-paper">{group.title}</h2>
-            <ul className="mt-5 flex flex-col gap-3">
+            <h2 className="font-poppins text-[13px] font-semibold text-brand-paper sm:text-[14px]">{group.title}</h2>
+            <ul className="mt-4 flex flex-col gap-3 sm:mt-5">
               {group.links.map((link) => (
                 <li key={link.label}>
                   <Link
@@ -89,7 +89,7 @@ export function Footer() {
       {/* Ghost wordmark */}
       <div
         aria-hidden="true"
-        className="pointer-events-none relative -mt-2 select-none overflow-hidden px-4 text-center font-poppins font-extrabold uppercase leading-[0.82] tracking-[-0.04em] text-white/[0.04]"
+        className="pointer-events-none relative -mt-2 select-none overflow-hidden px-4 text-center font-poppins font-extrabold uppercase leading-[0.82] tracking-[-0.04em] text-brand-paper/[0.04]"
       >
         <span className="block whitespace-nowrap text-[clamp(2.8rem,13.5vw,13rem)]">Mundo das</span>
         <span className="block whitespace-nowrap text-[clamp(2.8rem,13.5vw,13rem)]">Importadas</span>

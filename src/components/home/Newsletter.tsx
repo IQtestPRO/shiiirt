@@ -63,7 +63,7 @@ export function Newsletter() {
               </button>
             </form>
           )}
-          <p className="mt-3 text-[11px] font-medium text-brand-paper/40">
+          <p className="font-poppins mt-3 text-[10.5px] font-medium tracking-[0.02em] text-brand-paper/40 sm:text-[11px]">
             Sem spam, cancele quando quiser.
           </p>
         </div>

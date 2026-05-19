@@ -105,7 +105,7 @@ export function ProductGallery({ product }: { product: Product }) {
             type="button"
             onClick={() => setLightbox(null)}
             aria-label="Fechar imagem"
-            className="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-white/10 text-white ring-1 ring-white/20 backdrop-blur transition-colors hover:bg-white/15"
+            className="absolute right-5 top-5 grid h-11 w-11 place-items-center rounded-full bg-brand-paper/10 text-brand-paper ring-1 ring-brand-paper/20 backdrop-blur transition-colors duration-150 ease-out hover:bg-brand-paper/20"
           >
             <X className="h-5 w-5" strokeWidth={2} />
           </button>

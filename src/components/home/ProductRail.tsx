@@ -72,7 +72,7 @@ export function ProductRail({
           onClick={() => scrollByOneCard(-1)}
           aria-label="Produtos anteriores"
           disabled={!canPrev}
-          className="absolute left-0 top-[42%] z-20 hidden h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-neutral-200 bg-white text-neutral-700 shadow-[0_4px_14px_rgba(0,0,0,0.10)] transition-all duration-200 ease-out hover:border-neutral-400 hover:text-neutral-900 disabled:cursor-not-allowed disabled:opacity-0 sm:grid"
+          className="absolute left-0 top-[42%] z-20 hidden h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-brand-ink/10 bg-brand-paper text-brand-ink/70 shadow-[0_4px_14px_rgba(11,9,7,0.10)] transition-[color,border-color,opacity] duration-200 ease-out hover:border-brand-ink/40 hover:text-brand-ink disabled:cursor-not-allowed disabled:opacity-0 sm:grid"
         >
           <ChevronLeft className="h-5 w-5" aria-hidden="true" strokeWidth={1.8} />
         </button>
@@ -81,7 +81,7 @@ export function ProductRail({
           onClick={() => scrollByOneCard(1)}
           aria-label="Próximos produtos"
           disabled={!canNext}
-          className="absolute right-0 top-[42%] z-20 hidden h-11 w-11 -translate-y-1/2 translate-x-1/2 place-items-center rounded-full border border-neutral-200 bg-white text-neutral-700 shadow-[0_4px_14px_rgba(0,0,0,0.10)] transition-all duration-200 ease-out hover:border-neutral-400 hover:text-neutral-900 disabled:cursor-not-allowed disabled:opacity-0 sm:grid"
+          className="absolute right-0 top-[42%] z-20 hidden h-11 w-11 -translate-y-1/2 translate-x-1/2 place-items-center rounded-full border border-brand-ink/10 bg-brand-paper text-brand-ink/70 shadow-[0_4px_14px_rgba(11,9,7,0.10)] transition-[color,border-color,opacity] duration-200 ease-out hover:border-brand-ink/40 hover:text-brand-ink disabled:cursor-not-allowed disabled:opacity-0 sm:grid"
         >
           <ChevronRight className="h-5 w-5" aria-hidden="true" strokeWidth={1.8} />
         </button>

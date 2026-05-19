@@ -76,12 +76,12 @@ const reviews: Review[] = [
 ];
 
 const swatches = [
-  "from-amber-300/30 to-amber-300/5",
-  "from-rose-300/30 to-rose-300/5",
-  "from-emerald-300/30 to-emerald-300/5",
-  "from-sky-300/30 to-sky-300/5",
-  "from-violet-300/30 to-violet-300/5",
-  "from-brand-yellow/30 to-brand-yellow/5"
+  "from-brand-yellow/30 to-brand-yellow/5",
+  "from-brand-yellow/20 to-brand-paper/5",
+  "from-brand-paper/25 to-brand-yellow/5",
+  "from-brand-yellow/25 to-transparent",
+  "from-brand-paper/15 to-brand-yellow/10",
+  "from-brand-yellow/35 to-transparent"
 ];
 
 function getInitials(name: string) {
@@ -95,8 +95,8 @@ function StarShape({ value, size = 13 }: { value: 0 | 1; size?: number }) {
     <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden="true">
       <path
         d="M12 2.6 L14.9 8.5 L21.4 9.4 L16.7 13.95 L17.85 20.4 L12 17.4 L6.15 20.4 L7.3 13.95 L2.6 9.4 L9.1 8.5 Z"
-        fill={value ? "#F5A623" : "rgba(247,242,232,0.18)"}
-        stroke={value ? "#C77E0B" : "rgba(247,242,232,0.22)"}
+        fill={value ? "#F5D041" : "rgba(247,242,232,0.18)"}
+        stroke={value ? "#C9962E" : "rgba(247,242,232,0.22)"}
         strokeWidth="0.6"
         strokeLinejoin="round"
       />
@@ -167,14 +167,14 @@ export function Reviews() {
 
   return (
     <section className="bg-brand-ink text-brand-paper">
-      <div className="container-page py-16 md:py-24">
-        <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+      <div className="container-page py-12 sm:py-16 md:py-24">
+        <div className="mb-8 flex flex-col gap-5 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="font-poppins text-[11px] font-semibold uppercase tracking-[0.28em] text-brand-paper/55">
-              Testimonials
-            </p>
-            <h2 className="font-poppins balance mt-3 text-[clamp(2rem,4vw,3.4rem)] font-extrabold leading-[1.0] tracking-[-0.03em] text-brand-paper">
+            <p className="font-lato text-[10px] font-bold uppercase tracking-[0.28em] text-brand-paper/55 sm:text-[11px]">
               Feedbacks
+            </p>
+            <h2 className="font-bebas balance mt-2.5 text-[clamp(2.4rem,5vw,4rem)] uppercase leading-[0.95] tracking-[0.005em] text-brand-paper sm:mt-3">
+              O que dizem por aí
             </h2>
           </div>
           <div className="flex items-center gap-2">
@@ -182,7 +182,7 @@ export function Reviews() {
               type="button"
               onClick={() => scrollByAmount(-1)}
               aria-label="Feedback anterior"
-              className="grid h-11 w-11 place-items-center rounded-full border border-brand-paper/15 bg-brand-paper/[0.04] text-brand-paper transition-colors duration-200 ease-out hover:border-brand-paper/30 hover:bg-brand-paper/[0.08]"
+              className="grid h-10 w-10 place-items-center rounded-full border border-brand-paper/15 bg-brand-paper/[0.04] text-brand-paper transition-colors duration-200 ease-out hover:border-brand-paper/30 hover:bg-brand-paper/[0.08] md:h-11 md:w-11"
             >
               <ArrowLeft className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
             </button>
@@ -190,7 +190,7 @@ export function Reviews() {
               type="button"
               onClick={() => scrollByAmount(1)}
               aria-label="Próximo feedback"
-              className="grid h-11 w-11 place-items-center rounded-full border border-brand-paper/15 bg-brand-paper/[0.04] text-brand-paper transition-colors duration-200 ease-out hover:border-brand-paper/30 hover:bg-brand-paper/[0.08]"
+              className="grid h-10 w-10 place-items-center rounded-full border border-brand-paper/15 bg-brand-paper/[0.04] text-brand-paper transition-colors duration-200 ease-out hover:border-brand-paper/30 hover:bg-brand-paper/[0.08] md:h-11 md:w-11"
             >
               <ArrowRight className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
             </button>
@@ -201,24 +201,24 @@ export function Reviews() {
           {reviews.map((review, index) => (
             <article
               key={review.id}
-              className="flex h-auto shrink-0 flex-col gap-5 rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/60 p-6 transition-colors duration-300 ease-out hover:border-brand-paper/20 sm:p-7 w-[88vw] md:w-[calc(50%-0.625rem)]"
+              className="flex h-auto w-[86vw] shrink-0 flex-col gap-4 rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/60 p-5 transition-colors duration-300 ease-out hover:border-brand-paper/20 sm:gap-5 sm:p-7 md:w-[calc(50%-0.625rem)]"
             >
-              <div className="flex items-stretch gap-5">
+              <div className="flex items-stretch gap-4 sm:gap-5">
                 <div className="w-[42%] max-w-[180px] shrink-0">
                   <FeedbackMedia review={review} />
                 </div>
-                <div className="flex min-w-0 flex-1 flex-col gap-3">
+                <div className="flex min-w-0 flex-1 flex-col gap-2.5 sm:gap-3">
                   <Stars rating={review.rating} />
-                  <p className="font-poppins pretty line-clamp-6 text-[14px] font-normal leading-[1.55] text-brand-paper/85">
+                  <p className="font-poppins pretty line-clamp-6 text-[13px] font-normal leading-[1.55] text-brand-paper/85 sm:text-[14px]">
                     {review.body}
                   </p>
                 </div>
               </div>
-              <div className="mt-auto flex items-center gap-3 border-t border-brand-paper/10 pt-5">
+              <div className="mt-auto flex items-center gap-3 border-t border-brand-paper/10 pt-4 sm:pt-5">
                 <InitialsAvatar name={review.name} swatch={swatches[index % swatches.length]} />
                 <div className="min-w-0">
-                  <p className="font-poppins truncate text-[14px] font-semibold text-brand-paper">{review.name}</p>
-                  <p className="font-poppins mt-0.5 truncate text-[11px] font-normal text-brand-paper/55">
+                  <p className="font-poppins truncate text-[13.5px] font-semibold text-brand-paper sm:text-[14px]">{review.name}</p>
+                  <p className="font-poppins mt-0.5 truncate text-[10.5px] font-normal text-brand-paper/55 sm:text-[11px]">
                     {review.city} · {review.product}
                   </p>
                 </div>

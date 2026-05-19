@@ -10,17 +10,17 @@ export function CartItem({ item }: { item: CartItemType }) {
   const updateQuantity = useCartStore((state) => state.updateQuantity);
 
   return (
-    <article className="grid grid-cols-[76px_1fr] gap-3 rounded-lg border border-slate-200 bg-white p-3 shadow-sm">
-      <img src={item.product.images[0]} alt="" className="h-24 w-20 rounded-md bg-slate-100 object-cover" loading="lazy" />
+    <article className="grid grid-cols-[72px_1fr] gap-3 rounded-2xl border border-brand-ink/10 bg-brand-paper/50 p-3">
+      <img src={item.product.images[0]} alt="" className="h-24 w-[72px] rounded-xl bg-brand-cream object-cover" loading="lazy" />
       <div className="min-w-0">
         <div className="flex items-start justify-between gap-2">
-          <div>
-            <h3 className="line-clamp-2 text-sm font-extrabold text-brand-ink">{item.product.name}</h3>
-            <p className="mt-1 text-xs font-semibold text-slate-500">
+          <div className="min-w-0">
+            <h3 className="font-poppins line-clamp-2 text-[13px] font-extrabold leading-snug text-brand-ink">{item.product.name}</h3>
+            <p className="font-poppins mt-1 text-[11px] font-semibold text-brand-ink/55">
               Tam. {item.size} · {item.personalization.enabled ? "Com personalização" : "Sem personalização"}
             </p>
             {item.personalization.enabled ? (
-              <p className="mt-1 text-xs font-semibold text-slate-500">
+              <p className="font-poppins tabular mt-0.5 text-[11px] font-semibold text-brand-ink/55">
                 {item.personalization.name} #{item.personalization.number}
               </p>
             ) : null}
@@ -29,32 +29,32 @@ export function CartItem({ item }: { item: CartItemType }) {
             type="button"
             onClick={() => removeItem(item.lineId)}
             aria-label={`Remover ${item.product.name}`}
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-red-50 text-red-700"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full text-brand-ink/45 transition-colors duration-150 ease-out hover:bg-brand-ink/[0.06] hover:text-brand-ink"
           >
-            <Trash2 className="h-4 w-4" aria-hidden="true" />
+            <Trash2 className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
           </button>
         </div>
-        <div className="mt-3 flex items-center justify-between gap-2">
-          <div className="inline-flex h-10 items-center rounded-md border border-slate-200">
+        <div className="mt-2.5 flex items-center justify-between gap-2">
+          <div className="inline-flex h-10 items-center rounded-full border border-brand-ink/12">
             <button
               type="button"
               aria-label="Diminuir quantidade"
               onClick={() => updateQuantity(item.lineId, item.quantity - 1)}
-              className="grid h-10 w-10 place-items-center"
+              className="grid h-10 w-10 place-items-center text-brand-ink/70 transition-colors duration-150 ease-out hover:text-brand-ink"
             >
-              <Minus className="h-4 w-4" aria-hidden="true" />
+              <Minus className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
             </button>
-            <span className="min-w-8 text-center text-sm font-extrabold">{item.quantity}</span>
+            <span className="font-poppins tabular min-w-7 text-center text-[13px] font-extrabold text-brand-ink">{item.quantity}</span>
             <button
               type="button"
               aria-label="Aumentar quantidade"
               onClick={() => updateQuantity(item.lineId, item.quantity + 1)}
-              className="grid h-10 w-10 place-items-center"
+              className="grid h-10 w-10 place-items-center text-brand-ink/70 transition-colors duration-150 ease-out hover:text-brand-ink"
             >
-              <Plus className="h-4 w-4" aria-hidden="true" />
+              <Plus className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
             </button>
           </div>
-          <strong className="text-sm text-brand-ink">{formatCurrency(item.product.price * item.quantity)}</strong>
+          <strong className="font-poppins tabular text-[13px] font-extrabold text-brand-ink">{formatCurrency(item.product.price * item.quantity)}</strong>
         </div>
       </div>
     </article>
