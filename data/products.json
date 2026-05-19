@@ -1317,5 +1317,60 @@
       "#1F5FD4",
       "#C9A33F"
     ]
+  },
+  {
+    "id": "ct-028",
+    "slug": "camisa-flamengo-mundial-25-26-torcedor-adidas",
+    "name": "Camisa Flamengo Mundial 25/26 - Torcedor Adidas Masculina",
+    "category": "brasileirao",
+    "subcategory": "Rio de Janeiro",
+    "club": "Flamengo",
+    "league": "Brasileirao",
+    "gender": "masculino",
+    "oldPrice": 319.9,
+    "price": 229.9,
+    "discount": 28,
+    "installments": "3x de R$ 76,63 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-028/ct-028__camisa-flamengo-mundial-25-26__front__product__v1.png",
+      "/assets/products/ct-028/ct-028__camisa-flamengo-mundial-25-26__back__product__v1.png",
+      "/assets/products/ct-028/ct-028__camisa-flamengo-mundial-25-26__detail-script__product__v1.png",
+      "/assets/products/ct-028/ct-028__camisa-flamengo-mundial-25-26__detail-label__product__v1.png"
+    ],
+    "description": "Camisa edição Mundial 25/26 do Flamengo — versão especial Adidas com listras verticais finas, escudo CRF aplicado em alto-relevo no peito e letreiro Flamengo bordado nas costas em estilo retrô. Acabamento ouro-preto na etiqueta 1895 Flamengo. Personalizável com nome e número.",
+    "tags": [
+      "flamengo",
+      "brasileirao",
+      "mundial",
+      "adidas",
+      "rio de janeiro",
+      "personalizavel",
+      "vermelho",
+      "preto",
+      "retro"
+    ],
+    "related": [
+      "camisa-flamengo-i-25-26-adidas",
+      "camisa-flamengo-ii-feminina-2026",
+      "camisa-fluminense-i-feminina-2026"
+    ],
+    "colors": [
+      "#D81E27",
+      "#0A0A0A",
+      "#FFFFFF"
+    ]
   }
 ]
