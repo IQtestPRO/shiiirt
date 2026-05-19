@@ -226,7 +226,7 @@ export function NavbarDarkShadow() {
           <img
             src="/assets/logo-mundo.png"
             alt={storeName}
-            className="-my-6 h-28 w-auto lg:-my-8 lg:h-36"
+            className="h-12 w-auto sm:h-16 lg:-my-8 lg:h-36"
             style={{ filter: "invert(1)" }}
             loading="eager"
           />
