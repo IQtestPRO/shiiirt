@@ -1188,57 +1188,6 @@
     ]
   },
   {
-    "id": "ct-025",
-    "slug": "camisa-brasil-treino-jordan-2026-marinho",
-    "name": "Camisa Brasil Treino Jordan 2026 - Edição Pré-Jogo Azul Marinho",
-    "category": "selecoes",
-    "subcategory": "Americas",
-    "club": "Brasil",
-    "league": "Selecoes",
-    "gender": "masculino",
-    "oldPrice": 349.9,
-    "price": 249.9,
-    "discount": 29,
-    "installments": "4x de R$ 62,47 sem juros",
-    "freeShipping": true,
-    "sizes": [
-      "P",
-      "M",
-      "G",
-      "GG",
-      "XG",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "customizable": true,
-    "readyToShip": true,
-    "images": [
-      "/assets/products/ct-025/ct-025__camisa-brasil-treino-jordan-2026__front__product__v1.jpg"
-    ],
-    "description": "Camisa de treino oficial da Seleção Brasileira em parceria Jordan Brand. Azul marinho com detalhes em amarelo e verde, escudo CBF aplicado em alto-relevo e logo Jumpman em destaque. Modelo usado nos aquecimentos da Copa 2026.",
-    "tags": [
-      "brasil",
-      "selecao",
-      "treino",
-      "jordan",
-      "pre-jogo",
-      "copa",
-      "azul marinho",
-      "tendencia"
-    ],
-    "related": [
-      "camisa-brasil-i-2026-amarela",
-      "camisa-brasil-ii-2026-azul",
-      "camisa-argentina-i-2026"
-    ],
-    "colors": [
-      "#10173A",
-      "#0B1233",
-      "#F5D041"
-    ]
-  },
-  {
     "id": "ct-026",
     "slug": "kit-infantil-real-madrid-away-25-26",
     "name": "Kit Infantil Real Madrid Away 25/26 - Camisa + Short Adidas",
@@ -1434,8 +1383,7 @@
     ],
     "related": [
       "camisa-brasil-i-2026-amarela",
-      "camisa-brasil-ii-2026-azul",
-      "camisa-brasil-treino-jordan-2026-marinho"
+      "camisa-brasil-ii-2026-azul"
     ],
     "colors": [
       "#F2D435",
