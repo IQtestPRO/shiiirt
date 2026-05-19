@@ -17,11 +17,11 @@ export function Newsletter() {
     <section className="bg-brand-ink text-brand-paper">
       <div className="container-page py-16 md:py-20">
         <div className="mx-auto max-w-xl text-center">
-          <p className="text-[10px] font-bold uppercase tracking-[0.36em] text-brand-yellow">Newsletter</p>
-          <h2 className="font-poppins mt-3 text-[clamp(2.2rem,5vw,3.6rem)] font-extrabold uppercase leading-[0.95] tracking-[-0.03em]">
+          <p className="font-lato text-[10px] font-bold uppercase tracking-[0.36em] text-brand-yellow">Newsletter</p>
+          <h2 className="font-bebas mt-3 text-[clamp(2.8rem,6.5vw,5rem)] uppercase leading-[0.92] tracking-[0.005em]">
             Ganhe 10% off
           </h2>
-          <p className="pretty mt-4 text-[14px] font-medium leading-7 text-brand-paper/65 sm:text-[15px]">
+          <p className="font-lato pretty mt-4 text-[14px] font-medium leading-7 text-brand-paper/65 sm:text-[15px]">
             Cadastre-se e te avisamos quando o drop da semana chega — junto com o cupom{" "}
             <span className="tabular ml-1 inline-flex items-center rounded-full bg-brand-yellow px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-[0.22em] text-brand-ink">
               PRIMEIRACAMISA

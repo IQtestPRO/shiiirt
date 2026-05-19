@@ -18,7 +18,10 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
     "readyToShip": true,
@@ -51,7 +54,7 @@
     "id": "ct-002",
     "slug": "camisa-brasil-i-2026-amarela",
     "name": "Camisa Brasil I 2026 Amarela - Torcedor Masculina",
-    "category": "pronta-entrega",
+    "category": "selecoes",
     "subcategory": "Selecoes",
     "club": "Brasil",
     "league": "Selecoes",
@@ -62,10 +65,14 @@
     "installments": "2x de R$ 80,00 sem juros",
     "freeShipping": true,
     "sizes": [
+      "P",
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": false,
     "readyToShip": true,
@@ -94,7 +101,7 @@
   {
     "id": "ct-003",
     "slug": "camisa-flamengo-i-2026",
-    "name": "Camisa Flamengo I 2026 - Torcedor Masculina",
+    "name": "Camisa Flamengo I 25/26 - Torcedor Adidas Masculina",
     "category": "brasileirao",
     "subcategory": "Rio de Janeiro",
     "club": "Flamengo",
@@ -111,14 +118,19 @@
       "G",
       "GG",
       "XG",
-      "2XL"
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
     "readyToShip": true,
     "images": [
-      "/assets/products/ct-003/ct-003__camisa-flamengo-i-2026__front__public-reference__v1.webp"
+      "/assets/products/ct-003/ct-003__camisa-flamengo-i-25-26-adidas__front__product__v1.jpg",
+      "/assets/products/ct-003/ct-003__camisa-flamengo-i-25-26-adidas__back__product__v1.jpg",
+      "/assets/products/ct-003/ct-003__camisa-flamengo-i-25-26-adidas__front-crest__product__v1.jpg",
+      "/assets/products/ct-003/ct-003__camisa-flamengo-i-25-26-adidas__detail-adidas__product__v1.jpg"
     ],
-    "description": "Listras rubro-negras em leitura moderna, com gola confortavel e opcoes de personalizacao.",
+    "description": "Camisa I do Flamengo temporada 25/26 — manto rubro-negro tradicional Adidas com escudo CR bordado, listras horizontais e tecnologia AEROREADY para conforto em campo ou arquibancada.",
     "tags": [
       "flamengo",
       "brasileirao",
@@ -140,7 +152,7 @@
     "id": "ct-004",
     "slug": "camisa-flamengo-ii-feminina-2026",
     "name": "Camisa Flamengo II 2026 - Torcedor Feminina",
-    "category": "femininas",
+    "category": "brasileirao",
     "subcategory": "Brasileirao",
     "club": "Flamengo",
     "league": "Brasileirao Feminino",
@@ -155,10 +167,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-004/ct-004__camisa-flamengo-ii-feminina-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-004/ct-004__camisa-flamengo-ii-feminina-2026__back__public-reference__v1.jpg"
@@ -184,7 +199,7 @@
     "id": "ct-005",
     "slug": "camisa-sao-paulo-iii-2026-preta",
     "name": "Camisa Sao Paulo III 2026 Preta - Torcedor Masculina",
-    "category": "pronta-entrega",
+    "category": "brasileirao",
     "subcategory": "Sao Paulo",
     "club": "Sao Paulo",
     "league": "Brasileirao",
@@ -195,7 +210,14 @@
     "installments": "2x de R$ 94,95 sem juros",
     "freeShipping": true,
     "sizes": [
-      "G"
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": false,
     "readyToShip": true,
@@ -224,7 +246,7 @@
     "id": "ct-006",
     "slug": "camisa-sao-paulo-i-feminina-2026",
     "name": "Camisa Sao Paulo I 2026 - Torcedor Feminina",
-    "category": "femininas",
+    "category": "brasileirao",
     "subcategory": "Brasileirao",
     "club": "Sao Paulo",
     "league": "Brasileirao Feminino",
@@ -239,10 +261,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-006/ct-006__camisa-sao-paulo-i-feminina-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-006/ct-006__camisa-sao-paulo-i-feminina-2026__back__public-reference__v1.jpg"
@@ -267,7 +292,7 @@
     "id": "ct-007",
     "slug": "camisa-palmeiras-i-feminina-2026",
     "name": "Camisa Palmeiras I 2026 Verde - Torcedor Feminina",
-    "category": "femininas",
+    "category": "brasileirao",
     "subcategory": "Brasileirao",
     "club": "Palmeiras",
     "league": "Brasileirao Feminino",
@@ -282,10 +307,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-007/ct-007__camisa-palmeiras-i-feminina-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-007/ct-007__camisa-palmeiras-i-feminina-2026__back__public-reference__v1.jpg"
@@ -311,7 +339,7 @@
     "id": "ct-008",
     "slug": "camisa-corinthians-i-feminina-2026",
     "name": "Camisa Corinthians I 2026 - Torcedor Feminina",
-    "category": "femininas",
+    "category": "brasileirao",
     "subcategory": "Brasileirao",
     "club": "Corinthians",
     "league": "Brasileirao Feminino",
@@ -326,10 +354,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-008/ct-008__camisa-corinthians-i-feminina-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-008/ct-008__camisa-corinthians-i-feminina-2026__back__public-reference__v1.jpg"
@@ -355,7 +386,7 @@
     "id": "ct-009",
     "slug": "camisa-fluminense-i-feminina-2026",
     "name": "Camisa Fluminense I 2026 - Torcedor Feminina",
-    "category": "femininas",
+    "category": "brasileirao",
     "subcategory": "Brasileirao",
     "club": "Fluminense",
     "league": "Brasileirao Feminino",
@@ -370,10 +401,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-009/ct-009__camisa-fluminense-i-feminina-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-009/ct-009__camisa-fluminense-i-feminina-2026__back__public-reference__v1.jpg"
@@ -409,7 +443,14 @@
     "installments": "2x de R$ 84,95 sem juros",
     "freeShipping": true,
     "sizes": [
-      "M"
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
     "readyToShip": true,
@@ -490,7 +531,14 @@
     "installments": "2x de R$ 89,95 sem juros",
     "freeShipping": true,
     "sizes": [
-      "M"
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": false,
     "readyToShip": true,
@@ -530,7 +578,14 @@
     "installments": "2x de R$ 94,95 sem juros",
     "freeShipping": true,
     "sizes": [
-      "P"
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": false,
     "readyToShip": true,
@@ -575,10 +630,12 @@
       "G",
       "GG",
       "XG",
-      "2XL"
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-014/ct-014__camisa-barcelona-i-2026__front__public-reference__v1.jpg"
     ],
@@ -618,10 +675,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-015/ct-015__camisa-manchester-city-i-2026__front__public-reference__v1.jpg"
     ],
@@ -661,10 +721,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/api/product-art/camisa-birmingham-i-2026"
     ],
@@ -704,10 +767,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-017/ct-017__camisa-psg-i-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-017/ct-017__camisa-psg-i-2026__back__public-reference__v1.jpg"
@@ -748,10 +814,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-018/ct-018__camisa-argentina-i-2026__front__public-reference__v1.jpg"
     ],
@@ -790,10 +859,14 @@
       "P",
       "M",
       "G",
-      "GG"
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-019/ct-019__camisa-japao-i-2026__front__public-reference__v1.jpg"
     ],
@@ -833,10 +906,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-020/ct-020__camisa-al-hilal-i-2026__front__public-reference__v1.jpg"
     ],
@@ -876,10 +952,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-021/ct-021__camisa-al-nassr-i-2026__front__public-reference__v1.jpg"
     ],
@@ -919,10 +998,13 @@
       "M",
       "G",
       "GG",
-      "XG"
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-022/ct-022__camisa-inter-miami-i-2026__front__public-reference__v1.jpg"
     ],
@@ -964,10 +1046,12 @@
       "G",
       "GG",
       "XG",
-      "2XL"
+      "2XL",
+      "3XL",
+      "4XL"
     ],
     "customizable": true,
-    "readyToShip": false,
+    "readyToShip": true,
     "images": [
       "/assets/products/ct-023/ct-023__camisa-portugal-i-2026__front__public-reference__v1.jpg",
       "/assets/products/ct-023/ct-023__camisa-portugal-i-2026__back__public-reference__v1.jpg"
@@ -993,7 +1077,7 @@
     "id": "ct-024",
     "slug": "camisa-tailândia-especial-azul",
     "name": "Camisa Mundo das Importadas Especial Azul",
-    "category": "personalizaveis",
+    "category": "streetwear",
     "subcategory": "Edicao Especial",
     "club": "Mundo das Importadas",
     "league": "Colecao Propria",
@@ -1033,6 +1117,205 @@
       "#004AAD",
       "#F6D34A",
       "#2E9F5B"
+    ]
+  },
+  {
+    "id": "ct-024",
+    "slug": "camisa-sem-neymar-eu-nem-assisto-a-copa",
+    "name": "Camisa Sem Neymar Eu Nem Assisto a Copa - Edição Streetwear",
+    "category": "streetwear",
+    "subcategory": "Edição Limitada",
+    "club": "Mundo das Importadas",
+    "league": "Streetwear",
+    "gender": "unissex",
+    "oldPrice": 269.9,
+    "price": 179.9,
+    "discount": 33,
+    "installments": "3x de R$ 59,97 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": false,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-024/ct-024__camisa-sem-neymar__back__product__v1.png",
+      "/assets/products/ct-024/ct-024__camisa-sem-neymar__lifestyle__streetwear__v1.png"
+    ],
+    "description": "Manto streetwear em azul royal com estampa abstrata e tipografia retrô. Costas com letreiro \"SEM NEYMAR EU NEM ASSISTO A COPA\" e número 00 outline amarelo — peça-statement para a Copa 2026.",
+    "tags": [
+      "streetwear",
+      "edicao limitada",
+      "copa",
+      "pronta entrega",
+      "mais vendidos",
+      "azul",
+      "tendencia"
+    ],
+    "related": [
+      "camisa-brasil-ii-2026-azul",
+      "camisa-brasil-i-2026-amarela",
+      "camisa-flamengo-i-2026"
+    ],
+    "colors": [
+      "#1A2D7A",
+      "#0B1640",
+      "#F5D041"
+    ]
+  },
+  {
+    "id": "ct-025",
+    "slug": "camisa-brasil-treino-jordan-2026-marinho",
+    "name": "Camisa Brasil Treino Jordan 2026 - Edição Pré-Jogo Azul Marinho",
+    "category": "selecoes",
+    "subcategory": "Americas",
+    "club": "Brasil",
+    "league": "Selecoes",
+    "gender": "masculino",
+    "oldPrice": 349.9,
+    "price": 249.9,
+    "discount": 29,
+    "installments": "4x de R$ 62,47 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-025/ct-025__camisa-brasil-treino-jordan-2026__front__product__v1.jpg"
+    ],
+    "description": "Camisa de treino oficial da Seleção Brasileira em parceria Jordan Brand. Azul marinho com detalhes em amarelo e verde, escudo CBF aplicado em alto-relevo e logo Jumpman em destaque. Modelo usado nos aquecimentos da Copa 2026.",
+    "tags": [
+      "brasil",
+      "selecao",
+      "treino",
+      "jordan",
+      "pre-jogo",
+      "copa",
+      "azul marinho",
+      "tendencia"
+    ],
+    "related": [
+      "camisa-brasil-i-2026-amarela",
+      "camisa-brasil-ii-2026-azul",
+      "camisa-argentina-i-2026"
+    ],
+    "colors": [
+      "#10173A",
+      "#0B1233",
+      "#F5D041"
+    ]
+  },
+  {
+    "id": "ct-026",
+    "slug": "kit-infantil-real-madrid-away-25-26",
+    "name": "Kit Infantil Real Madrid Away 25/26 - Camisa + Short Adidas",
+    "category": "infantil",
+    "subcategory": "Europa",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "gender": "infantil",
+    "oldPrice": 449.9,
+    "price": 329.9,
+    "discount": 27,
+    "installments": "5x de R$ 65,98 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "22 (6-7 Anos)",
+      "24 (8-9 Anos)",
+      "26 (10-11 Anos)",
+      "28 (12-13 Anos)"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-026/ct-026__kit-infantil-real-madrid-away-25-26__set__product__v1.jpg"
+    ],
+    "description": "Kit infantil oficial Real Madrid 25/26 visitante — conjunto completo camisa + short Adidas em azul marinho com listras brancas. Tecido leve com tecnologia AEROREADY, escudo bordado e logo Emirates Fly Better. Ideal para os pequenos torcedores merengues.",
+    "tags": [
+      "real madrid",
+      "la liga",
+      "infantil",
+      "kit",
+      "adidas",
+      "away",
+      "europa",
+      "crianca"
+    ],
+    "related": [
+      "kit-internacional-infantil-2026",
+      "camisa-real-madrid-iii-2026-azul",
+      "camisa-barcelona-i-2026"
+    ],
+    "colors": [
+      "#1A2D6E",
+      "#FFFFFF",
+      "#0B1640"
+    ]
+  },
+  {
+    "id": "ct-027",
+    "slug": "camisa-cruzeiro-away-25-26-azul-claro",
+    "name": "Camisa Cruzeiro Away 25/26 - Torcedor Adidas Masculina Azul",
+    "category": "brasileirao",
+    "subcategory": "Sul",
+    "club": "Cruzeiro",
+    "league": "Brasileirao",
+    "gender": "masculino",
+    "oldPrice": 299.9,
+    "price": 219.9,
+    "discount": 27,
+    "installments": "3x de R$ 73,30 sem juros",
+    "freeShipping": true,
+    "sizes": [
+      "P",
+      "M",
+      "G",
+      "GG",
+      "XG",
+      "2XL",
+      "3XL",
+      "4XL"
+    ],
+    "customizable": true,
+    "readyToShip": true,
+    "images": [
+      "/assets/products/ct-027/ct-027__camisa-cruzeiro-away-25-26__front__product__v1.jpg"
+    ],
+    "description": "Camisa II do Cruzeiro 25/26 em azul claro celeste com grafismo das estrelas Adidas e logo Betfair. Tecnologia AEROREADY, escudo bordado e detalhes em dourado para o torcedor cruzeirense.",
+    "tags": [
+      "cruzeiro",
+      "brasileirao",
+      "away",
+      "adidas",
+      "azul",
+      "minas gerais",
+      "betfair"
+    ],
+    "related": [
+      "camisa-gremio-i-tricolor-2026",
+      "camisa-flamengo-i-2026",
+      "camisa-sao-paulo-iii-2026-preta"
+    ],
+    "colors": [
+      "#5BA8E0",
+      "#1F5FD4",
+      "#C9A33F"
     ]
   }
 ]

@@ -15,13 +15,11 @@ import {
   ShoppingBag,
   Sparkles,
   Trophy,
-  UserRound,
   X
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { storeName } from "@/lib/catalog";
 import { useCartStore } from "@/store/cart-store";
-import { LoginModal } from "./LoginModal";
 
 type LinkItem = {
   label: string;
@@ -182,18 +180,10 @@ const dropdowns: DropdownConfig[] = [
 const leftLink: PlainLink = { label: "Pronta Entrega", href: "/categoria/pronta-entrega" };
 const rightLink: PlainLink = { label: "Kit Infantil", href: "/categoria/infantil" };
 
-const springTransition = {
-  type: "spring" as const,
-  stiffness: 400,
-  damping: 30,
-  mass: 0.8
-};
-
 export function NavbarDarkShadow() {
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [loginOpen, setLoginOpen] = useState(false);
   const [query, setQuery] = useState("");
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const openCart = useCartStore((state) => state.openCart);
@@ -281,12 +271,6 @@ export function NavbarDarkShadow() {
             }}
           />
           <QuickAction
-            Icon={UserRound}
-            label="Minha conta"
-            ariaLabel="Abrir minha conta"
-            onClick={() => setLoginOpen(true)}
-          />
-          <QuickAction
             Icon={ShoppingBag}
             label="Meu carrinho"
             ariaLabel={`Abrir carrinho com ${cartCount} item(s)`}
@@ -326,71 +310,28 @@ export function NavbarDarkShadow() {
       <nav
         aria-label="Navegação por categorias"
         className="relative hidden border-t border-brand-paper/10 lg:block"
-        onMouseLeave={closeDropdown}
       >
         <div className="container-page flex items-center justify-center gap-1">
           <PlainNavLink href={leftLink.href} label={leftLink.label} onHover={closeDropdown} />
 
-          {dropdowns.map((dd) => (
+          {dropdowns.map((dd, index) => (
             <DropdownTrigger
               key={dd.label}
               config={dd}
               isActive={activeDropdown === dd.label}
               onOpen={() => openDropdown(dd.label)}
               onClose={closeDropdown}
+              edge={index === 0 ? "left" : index === dropdowns.length - 1 ? "right" : "center"}
             />
           ))}
 
           <PlainNavLink href={rightLink.href} label={rightLink.label} onHover={closeDropdown} />
         </div>
-
-        <AnimatePresence>
-          {activeDropdown ? (
-            <motion.div
-              key="dropdown-shell"
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 8 }}
-              transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
-              className="absolute left-1/2 top-full z-50 -translate-x-1/2 px-4 pt-3"
-              onMouseEnter={() => openDropdown(activeDropdown)}
-            >
-              <motion.div
-                layout
-                transition={springTransition}
-                className="overflow-hidden rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/95 p-3 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)] backdrop-blur-2xl"
-              >
-                <AnimatePresence mode="popLayout" initial={false}>
-                  {dropdowns
-                    .filter((dd) => dd.label === activeDropdown)
-                    .map((dd) => (
-                      <motion.div
-                        key={dd.label}
-                        initial={{ opacity: 0, x: 20, filter: "blur(4px)" }}
-                        animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-                        exit={{ opacity: 0, x: -20, filter: "blur(4px)" }}
-                        transition={{ duration: 0.22, ease: [0.23, 1, 0.32, 1] }}
-                      >
-                        <DropdownContent config={dd} />
-                      </motion.div>
-                    ))}
-                </AnimatePresence>
-              </motion.div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
       </nav>
 
       <AnimatePresence initial={false}>
-        {mobileOpen ? (
-          <MobileNav
-            onClose={() => setMobileOpen(false)}
-            onAccount={() => setLoginOpen(true)}
-          />
-        ) : null}
+        {mobileOpen ? <MobileNav onClose={() => setMobileOpen(false)} /> : null}
       </AnimatePresence>
-
-      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </header>
   );
 }
@@ -444,29 +385,57 @@ function DropdownTrigger({
   config,
   isActive,
   onOpen,
-  onClose
+  onClose,
+  edge
 }: {
   config: DropdownConfig;
   isActive: boolean;
   onOpen: () => void;
   onClose: () => void;
+  edge: "left" | "center" | "right";
 }) {
+  const panelAnchor =
+    edge === "left"
+      ? "left-0"
+      : edge === "right"
+        ? "right-0"
+        : "left-1/2 -translate-x-1/2";
+  const originClass =
+    edge === "left" ? "origin-top-left" : edge === "right" ? "origin-top-right" : "origin-top";
+
   return (
-    <Link
-      href={config.href}
-      onMouseEnter={onOpen}
-      onClick={() => (isActive ? onClose() : null)}
-      className="font-poppins inline-flex items-center gap-1.5 rounded-md px-4 py-3.5 text-[14px] font-medium tracking-[0.01em] text-brand-paper/85 transition-colors duration-150 ease-out hover:bg-brand-paper/[0.06] hover:text-brand-paper"
-      aria-expanded={isActive}
-    >
-      {config.label}
-      <ChevronDown
-        className={`h-3.5 w-3.5 text-brand-paper/55 transition-transform duration-200 ${
-          isActive ? "rotate-180" : ""
-        }`}
-        strokeWidth={2}
-      />
-    </Link>
+    <div className="relative" onMouseEnter={onOpen} onMouseLeave={onClose}>
+      <Link
+        href={config.href}
+        onClick={() => (isActive ? onClose() : null)}
+        className="font-poppins inline-flex items-center gap-1.5 rounded-md px-4 py-3.5 text-[14px] font-medium tracking-[0.01em] text-brand-paper/85 transition-colors duration-150 ease-out hover:bg-brand-paper/[0.06] hover:text-brand-paper"
+        aria-expanded={isActive}
+      >
+        {config.label}
+        <ChevronDown
+          className={`h-3.5 w-3.5 text-brand-paper/55 transition-transform duration-200 ${
+            isActive ? "rotate-180" : ""
+          }`}
+          strokeWidth={2}
+        />
+      </Link>
+      <AnimatePresence>
+        {isActive ? (
+          <motion.div
+            key={`dd-panel-${config.label}`}
+            initial={{ opacity: 0, y: 8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 8, scale: 0.98 }}
+            transition={{ duration: 0.18, ease: [0.23, 1, 0.32, 1] }}
+            className={`absolute top-full z-50 pt-3 ${panelAnchor} ${originClass}`}
+          >
+            <div className="overflow-hidden rounded-2xl border border-brand-paper/10 bg-brand-inkSoft/95 p-3 shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)] backdrop-blur-2xl">
+              <DropdownContent config={config} />
+            </div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+    </div>
   );
 }
 
@@ -479,8 +448,8 @@ function DropdownContent({ config }: { config: DropdownConfig }) {
     <div
       className={
         hasFeature
-          ? "grid w-[52rem] grid-cols-[1fr_1fr_16rem] gap-0"
-          : "grid w-[34rem] grid-cols-2 gap-0"
+          ? "grid w-[44rem] max-w-[calc(100vw-3rem)] grid-cols-[1fr_1fr_13rem] gap-0"
+          : "grid w-[30rem] max-w-[calc(100vw-3rem)] grid-cols-2 gap-0"
       }
     >
       <div className="p-2">
@@ -551,7 +520,7 @@ function LinkRow({ item }: { item: LinkItem }) {
   );
 }
 
-function MobileNav({ onClose, onAccount }: { onClose: () => void; onAccount: () => void }) {
+function MobileNav({ onClose }: { onClose: () => void }) {
   return (
     <motion.div
       initial={{ opacity: 0, height: 0 }}
@@ -565,17 +534,7 @@ function MobileNav({ onClose, onAccount }: { onClose: () => void; onAccount: () 
           <MobileDropdown key={dd.label} config={dd} onClose={onClose} />
         ))}
         <PlainMobileLink href={rightLink.href} label={rightLink.label} onClose={onClose} />
-        <div className="mt-4 flex items-center justify-between gap-2 border-t border-brand-paper/10 pt-4">
-          <button
-            type="button"
-            onClick={() => {
-              onAccount();
-              onClose();
-            }}
-            className="font-poppins rounded-md px-3 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-brand-paper/75 hover:text-brand-paper"
-          >
-            Minha conta
-          </button>
+        <div className="mt-4 flex items-center justify-end border-t border-brand-paper/10 pt-4">
           <Link
             href="/categoria/promocoes"
             onClick={onClose}

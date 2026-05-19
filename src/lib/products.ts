@@ -9,12 +9,24 @@ export function getProductBySlug(slug: string) {
 }
 
 export function getProductsByCategory(category: string) {
+  if (category === "pronta-entrega") {
+    return products.filter((product) => product.readyToShip);
+  }
+
   if (category === "promocoes") {
     return products.filter((product) => product.discount > 0);
   }
 
   if (category === "personalizaveis") {
     return products.filter((product) => product.customizable);
+  }
+
+  if (category === "femininas") {
+    return products.filter((product) => product.gender === "feminino");
+  }
+
+  if (category === "infantil") {
+    return products.filter((product) => product.gender === "infantil");
   }
 
   return products.filter((product) => product.category === category);

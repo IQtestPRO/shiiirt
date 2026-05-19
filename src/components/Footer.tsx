@@ -35,10 +35,8 @@ const groups: FooterGroup[] = [
     ]
   },
   {
-    title: "Conta",
+    title: "Suporte",
     links: [
-      { label: "Minha conta", href: "#" },
-      { label: "Meus pedidos", href: "#" },
       { label: "Rastrear pedido", href: "#" },
       { label: "Tabela de medidas", href: "/busca?q=tamanho" }
     ]

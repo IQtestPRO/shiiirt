@@ -8,19 +8,28 @@ export type Crumb = {
 
 export function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-5 flex flex-wrap items-center gap-1 text-sm text-slate-600">
-      <Link className="font-semibold text-brand-blue hover:underline" href="/">
-        Inicio
+    <nav
+      aria-label="Breadcrumb"
+      className="font-poppins mb-6 flex flex-wrap items-center gap-1.5 text-[12px] tracking-[0.02em] text-brand-ink/55"
+    >
+      <Link
+        href="/"
+        className="font-medium text-brand-ink/60 underline decoration-brand-ink/20 decoration-1 underline-offset-[5px] transition-colors duration-150 ease-out hover:text-brand-ink hover:decoration-brand-ink/60"
+      >
+        Início
       </Link>
       {items.map((item) => (
-        <span key={item.label} className="flex items-center gap-1">
-          <ChevronRight className="h-4 w-4" aria-hidden="true" />
+        <span key={item.label} className="flex items-center gap-1.5">
+          <ChevronRight className="h-3.5 w-3.5 text-brand-ink/30" aria-hidden="true" strokeWidth={1.5} />
           {item.href ? (
-            <Link className="font-semibold text-brand-blue hover:underline" href={item.href}>
+            <Link
+              href={item.href}
+              className="font-medium text-brand-ink/60 transition-colors duration-150 ease-out hover:text-brand-ink"
+            >
               {item.label}
             </Link>
           ) : (
-            <span className="font-semibold text-slate-700">{item.label}</span>
+            <span className="font-medium text-brand-ink">{item.label}</span>
           )}
         </span>
       ))}

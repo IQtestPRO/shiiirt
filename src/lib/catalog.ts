@@ -2,7 +2,7 @@ export const storeName = process.env.NEXT_PUBLIC_STORE_NAME || "Mundo das Import
 export const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5500000000000";
 
 export const categories = [
-  { slug: "pronta-entrega", label: "Pronta Entrega", description: "Camisas com envio rapido no Brasil." },
+  { slug: "pronta-entrega", label: "Pronta Entrega", description: "Camisas com envio rápido no Brasil." },
   { slug: "brasileirao", label: "Brasileirão", description: "Clubes brasileiros por estado e regiao." },
   { slug: "europa", label: "Europa", description: "Premier League, La Liga, Serie A, Ligue 1 e mais." },
   { slug: "selecoes", label: "Seleções", description: "Modelos de selecoes das Americas, Europa, Asia e Africa." },

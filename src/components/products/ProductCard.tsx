@@ -1,111 +1,152 @@
 "use client";
 
-import { Eye } from "lucide-react";
+import { Check, Heart } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { ProductImage } from "@/components/products/ProductImage";
-import { ProductQuickViewModal } from "@/components/products/ProductQuickViewModal";
-import { CometCard } from "@/components/ui/comet-card";
 import { formatCurrency } from "@/lib/format";
+import { useCartStore } from "@/store/cart-store";
 import type { Product } from "@/types/product";
 
-const ACTION_BLUE = "bg-[#1959D2]";
-
 function parseInstallments(raw: string) {
-  const match = raw.match(/^(\d+\s*x)\s+de\s+(R\$\s*[\d.,]+)\s*(.*)$/i);
-  if (!match) return { times: "", price: "", rest: raw };
-  return { times: match[1].trim(), price: match[2].trim(), rest: match[3].trim() };
+  const match = raw.match(/^(\d+)\s*x\s+de\s+(R\$\s*[\d.,]+)/i);
+  if (!match) return null;
+  return { times: `${match[1]}x`, price: match[2].trim() };
 }
 
 export function ProductCard({ product }: { product: Product }) {
-  const [quickOpen, setQuickOpen] = useState(false);
+  const addItem = useCartStore((state) => state.addItem);
+  const [favorited, setFavorited] = useState(false);
+  const [addedSize, setAddedSize] = useState<string | null>(null);
+
   const installments = parseInstallments(product.installments);
+  const hasDiscount = product.discount > 0;
+  const primaryImage = `${product.images[0]}?v=4`;
+  const secondaryImage =
+    product.images[1] && product.images[1] !== product.images[0]
+      ? `${product.images[1]}?v=4`
+      : null;
+  const visibleSizes = product.sizes.slice(0, 5);
+
+  function quickAdd(size: string, event: React.MouseEvent) {
+    event.preventDefault();
+    event.stopPropagation();
+    addItem(product, size, { enabled: false });
+    setAddedSize(size);
+    window.setTimeout(() => setAddedSize(null), 1400);
+  }
+
+  function toggleFavorite(event: React.MouseEvent) {
+    event.preventDefault();
+    event.stopPropagation();
+    setFavorited((value) => !value);
+  }
 
   return (
-    <CometCard className="h-full">
-      <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white p-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition-shadow duration-300 ease-out hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
-      <Link href={`/produtos/${product.slug}`} aria-label={`Ver ${product.name}`} className="relative block">
-        <ProductImage product={product} />
+    <article className="group relative flex h-full flex-col">
+      <Link
+        href={`/produtos/${product.slug}`}
+        aria-label={`Ver ${product.name}`}
+        className="relative block overflow-hidden rounded-xl bg-[#f6f4ef] ring-1 ring-black/[0.06] transition-shadow duration-300 ease-out md:rounded-[14px] md:hover:shadow-[0_18px_38px_-22px_rgba(11,9,7,0.22)]"
+      >
+        <div className="relative aspect-[4/5]">
+          <img
+            src={primaryImage}
+            alt={product.name}
+            loading="lazy"
+            className={`absolute inset-0 h-full w-full object-contain p-3 transition-opacity duration-[450ms] ease-out sm:p-5 md:p-6 ${
+              secondaryImage ? "md:group-hover:opacity-0" : ""
+            }`}
+          />
+          {secondaryImage ? (
+            <img
+              src={secondaryImage}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-contain p-3 opacity-0 transition-opacity duration-[450ms] ease-out sm:p-5 md:p-6 md:group-hover:opacity-100"
+            />
+          ) : null}
+        </div>
 
-        <div className="pointer-events-none absolute left-3 top-3 flex flex-col items-start gap-2">
-          {product.discount > 0 ? (
-            <span
-              className={`font-poppins grid h-14 w-14 place-items-center rounded-full ${ACTION_BLUE} text-center text-[11px] font-extrabold uppercase leading-[1.05] text-white shadow-[0_4px_10px_rgba(25,89,210,0.35)]`}
-            >
-              <span>
-                {product.discount}%
-                <br />
-                OFF
-              </span>
+        <div className="pointer-events-none absolute inset-x-2 top-2 flex items-start justify-between gap-2 sm:inset-x-3 sm:top-3">
+          {hasDiscount ? (
+            <span className="font-poppins pointer-events-auto inline-flex items-center rounded-full bg-brand-ink px-2 py-[3px] text-[10px] font-bold uppercase leading-none tracking-[0.06em] text-brand-paper sm:px-2.5 sm:py-1 sm:text-[10.5px]">
+              −{product.discount}%
             </span>
           ) : (
-            <span
-              className={`font-poppins rounded-full ${ACTION_BLUE} px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.16em] text-white shadow-[0_4px_10px_rgba(25,89,210,0.30)]`}
-            >
-              Novo
-            </span>
+            <span aria-hidden="true" />
           )}
-          {product.freeShipping ? (
-            <span
-              className={`font-poppins rounded-full ${ACTION_BLUE} px-3 py-1.5 text-[10px] font-extrabold uppercase tracking-[0.16em] text-white shadow-[0_4px_10px_rgba(25,89,210,0.30)]`}
-            >
-              Frete grátis
-            </span>
-          ) : null}
+          <button
+            type="button"
+            onClick={toggleFavorite}
+            aria-label={favorited ? "Remover dos favoritos" : "Adicionar aos favoritos"}
+            aria-pressed={favorited}
+            className="pointer-events-auto grid h-10 w-10 place-items-center rounded-full bg-white/95 text-neutral-700 ring-1 ring-black/[0.06] backdrop-blur transition-transform duration-200 ease-out active:scale-[0.92] md:h-9 md:w-9 md:hover:text-brand-ink"
+          >
+            <Heart
+              className={`h-4 w-4 transition-colors duration-150 md:h-[15px] md:w-[15px] ${
+                favorited ? "fill-red-500 text-red-500" : ""
+              }`}
+              aria-hidden="true"
+              strokeWidth={1.7}
+            />
+          </button>
+        </div>
+
+        <div className="pointer-events-none absolute inset-x-3 bottom-3 hidden translate-y-1.5 opacity-0 transition-[opacity,transform] duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 md:block">
+          <div className="pointer-events-auto rounded-full bg-brand-ink/[0.96] px-1.5 py-1 shadow-[0_10px_24px_-12px_rgba(11,9,7,0.45)] backdrop-blur">
+            <div className="flex items-center justify-between gap-0.5">
+              {visibleSizes.map((label) => {
+                const isAdded = addedSize === label;
+                return (
+                  <button
+                    key={label}
+                    type="button"
+                    onClick={(event) => quickAdd(label, event)}
+                    aria-label={`Adicionar tamanho ${label} ao carrinho`}
+                    className={`font-poppins grid h-7 min-w-[30px] place-items-center rounded-full px-2 text-[10.5px] font-semibold tracking-[0.02em] transition-colors duration-150 ease-out active:scale-[0.94] ${
+                      isAdded
+                        ? "bg-brand-yellow text-brand-ink"
+                        : "text-brand-paper/85 hover:bg-brand-paper hover:text-brand-ink"
+                    }`}
+                  >
+                    {isAdded ? <Check className="h-3 w-3" strokeWidth={2.6} /> : label}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </Link>
 
-      <div className="flex flex-1 flex-col items-center gap-3 px-2 pb-2 pt-5 text-center">
+      <div className="flex flex-1 flex-col gap-1 px-0.5 pt-2.5 sm:px-1 sm:pt-3">
         <Link
           href={`/produtos/${product.slug}`}
-          className="font-poppins block min-h-[42px] max-w-[34ch] text-balance text-[13px] font-normal leading-[1.4] text-neutral-500 transition-colors duration-150 ease-out hover:text-neutral-800"
+          className="font-poppins line-clamp-2 min-h-[34px] text-[12.5px] font-medium leading-[1.35] tracking-[-0.005em] text-neutral-800 transition-colors duration-150 ease-out hover:text-brand-ink sm:min-h-[36px] sm:text-[13px]"
         >
           {product.name}
         </Link>
 
-        <div className="flex items-baseline justify-center gap-2.5">
-          {product.oldPrice > product.price ? (
-            <span className="font-poppins text-[13px] font-normal text-neutral-400 line-through">
-              {formatCurrency(product.oldPrice)}
+        <div className="mt-auto flex flex-col gap-0.5 pt-1.5">
+          <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0 leading-none">
+            <span className="font-poppins text-[15.5px] font-bold tracking-[-0.015em] text-brand-ink sm:text-[17px]">
+              {formatCurrency(product.price)}
             </span>
+            {hasDiscount ? (
+              <span className="font-poppins tabular text-[11px] font-normal text-neutral-400 line-through sm:text-[11.5px]">
+                {formatCurrency(product.oldPrice)}
+              </span>
+            ) : null}
+          </div>
+          {installments ? (
+            <p className="font-poppins text-[10.5px] font-normal leading-[1.35] text-neutral-500">
+              <span className="tabular font-medium text-neutral-700">{installments.times}</span>
+              {" de "}
+              <span className="tabular font-medium text-neutral-700">{installments.price}</span>
+            </p>
           ) : null}
-          <span className="font-poppins text-[20px] font-extrabold tracking-tight text-brand-ink">
-            {formatCurrency(product.price)}
-          </span>
-        </div>
-
-        {installments.times ? (
-          <p className="font-poppins text-[12px] font-normal text-neutral-500">
-            <span className="font-bold text-neutral-700">{installments.times}</span>
-            {" de "}
-            <span className="font-bold text-neutral-700">{installments.price}</span>
-            {installments.rest ? <> {installments.rest}</> : null}
-          </p>
-        ) : (
-          <p className="font-poppins text-[12px] font-normal text-neutral-500">{product.installments}</p>
-        )}
-
-        <div className="mt-3 grid w-full grid-cols-2 gap-2.5">
-          <button
-            type="button"
-            onClick={() => setQuickOpen(true)}
-            className="font-poppins inline-flex min-h-11 items-center justify-center rounded-full bg-brand-ink px-4 text-[11px] font-bold uppercase tracking-[0.16em] text-white transition-colors duration-200 ease-out hover:bg-neutral-800"
-          >
-            Comprar
-          </button>
-          <button
-            type="button"
-            onClick={() => setQuickOpen(true)}
-            className="font-poppins inline-flex min-h-11 items-center justify-center gap-2 rounded-full border border-neutral-300 bg-white px-4 text-[11px] font-bold uppercase tracking-[0.16em] text-brand-ink transition-colors duration-200 ease-out hover:border-neutral-400 hover:bg-neutral-50"
-          >
-            <Eye className="h-4 w-4" aria-hidden="true" strokeWidth={1.8} />
-            Espiar
-          </button>
         </div>
       </div>
-
-      {quickOpen ? <ProductQuickViewModal product={product} onClose={() => setQuickOpen(false)} /> : null}
     </article>
-    </CometCard>
   );
 }

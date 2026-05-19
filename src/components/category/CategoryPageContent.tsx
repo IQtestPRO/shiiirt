@@ -43,19 +43,37 @@ export function CategoryPageContent({ products }: { products: Product[] }) {
     });
   }, [filters, products]);
 
+  const isFiltered =
+    filters.size !== initialFilters.size ||
+    filters.gender !== initialFilters.gender ||
+    filters.price !== initialFilters.price ||
+    filters.ready !== initialFilters.ready ||
+    filters.customizable !== initialFilters.customizable ||
+    filters.sort !== initialFilters.sort;
+
+  const count = filteredProducts.length;
+  const countLabel = count.toString().padStart(2, "0");
+
   return (
-    <div className="grid gap-5 lg:grid-cols-[280px_1fr]">
+    <div className="grid gap-8 lg:grid-cols-[260px_1fr] lg:gap-10">
       <FilterPanel filters={filters} onChange={setFilters} availableSizes={availableSizes} />
       <div>
-        <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-md bg-white px-4 py-3 text-sm font-bold text-slate-600 shadow-card">
-          <span>{filteredProducts.length} produto(s) encontrado(s)</span>
-          <button
-            type="button"
-            onClick={() => setFilters(initialFilters)}
-            className="rounded-md border border-slate-200 px-3 py-2 text-brand-blue"
-          >
-            Limpar filtros
-          </button>
+        <div className="mb-5 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-black/[0.08] pb-4">
+          <p className="font-lato flex items-baseline gap-2 text-[13px] text-brand-ink/60">
+            <span className="font-mono-display tabular text-[15px] font-semibold text-brand-ink">
+              {countLabel}
+            </span>
+            <span>{count === 1 ? "produto encontrado" : "produtos encontrados"}</span>
+          </p>
+          {isFiltered ? (
+            <button
+              type="button"
+              onClick={() => setFilters(initialFilters)}
+              className="font-lato text-[12px] font-bold uppercase tracking-[0.18em] text-brand-ink underline decoration-brand-ink/30 decoration-1 underline-offset-[6px] transition-[text-decoration-color,color] duration-150 ease-out hover:decoration-brand-ink"
+            >
+              Limpar filtros
+            </button>
+          ) : null}
         </div>
         <ProductGrid products={filteredProducts} />
       </div>

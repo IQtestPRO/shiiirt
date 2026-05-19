@@ -12,3 +12,9 @@ dist/
 
 # Dev-time tooling (AI agent skills, local settings)
 .claude/
+
+# Third-party reference content (do not publish)
+public/assets/Blusas-originais/
+public/assets/blu-org/
+public/assets/blu-org.zip
+public/assets/novass/

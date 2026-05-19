@@ -6,19 +6,19 @@ const tiles = [
     href: "/categoria/pronta-entrega",
     eyebrow: "Pronta entrega",
     title: "Envio rápido no Brasil",
-    image: "/assets/category-yellow-hanger.png"
+    image: "/assets/card1.png"
   },
   {
     href: "/categoria/selecoes",
     eyebrow: "Seleções 2026",
     title: "Camisas para a Copa",
-    image: "/assets/hero-flatlay.png"
+    image: "/assets/card2.png"
   },
   {
     href: "/categoria/personalizaveis",
     eyebrow: "Personalize",
     title: "Nome e número sob medida",
-    image: "/assets/category-stack-folded.png"
+    image: "/assets/card3.png"
   }
 ];
 
@@ -27,8 +27,8 @@ export function CategoryStrip() {
     <section className="container-page py-12 sm:py-16">
       <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-brand-ink/55">Coleções em destaque</p>
-          <h2 className="font-poppins balance mt-2 text-[clamp(1.7rem,3.6vw,2.6rem)] font-extrabold leading-[1.05] tracking-[-0.025em] text-brand-ink">
+          <p className="font-lato text-[11px] font-bold uppercase tracking-[0.28em] text-brand-ink/55">Coleções em destaque</p>
+          <h2 className="font-bebas balance mt-3 text-[clamp(2.4rem,5.4vw,4.2rem)] uppercase leading-[0.95] tracking-[0.005em] text-brand-ink">
             Por onde começar
           </h2>
         </div>

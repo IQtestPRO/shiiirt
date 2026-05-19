@@ -2,7 +2,6 @@ import { CategoryBlocks } from "@/components/home/CategoryBlocks";
 import { CategoryStrip } from "@/components/home/CategoryStrip";
 import { FAQ } from "@/components/home/FAQ";
 import { HeroBanner } from "@/components/home/HeroBanner";
-import { HowToBuyBento } from "@/components/home/HowToBuyBento";
 import { LogoCloud } from "@/components/home/LogoCloud";
 import { LookbookBanner } from "@/components/home/LookbookBanner";
 import { Newsletter } from "@/components/home/Newsletter";
@@ -11,9 +10,19 @@ import { ProductSection } from "@/components/home/ProductSection";
 import { Reviews } from "@/components/home/Reviews";
 import { products } from "@/lib/products";
 
+const FEATURED_SLUGS = ["camisa-sem-neymar-eu-nem-assisto-a-copa"];
+
+function prioritize<T extends { slug: string }>(list: T[]) {
+  const featured = FEATURED_SLUGS
+    .map((slug) => list.find((item) => item.slug === slug))
+    .filter((item): item is T => Boolean(item));
+  const rest = list.filter((item) => !FEATURED_SLUGS.includes(item.slug));
+  return [...featured, ...rest];
+}
+
 export default function HomePage() {
-  const ready = products.filter((product) => product.readyToShip).slice(0, 10);
-  const bestSellers = products.filter((product) => product.discount > 0).slice(0, 8);
+  const ready = prioritize(products.filter((product) => product.readyToShip)).slice(0, 10);
+  const bestSellers = prioritize(products.filter((product) => product.discount > 0)).slice(0, 8);
   const feminine = products.filter((product) => product.gender === "feminino").slice(0, 8);
   const customizable = products.filter((product) => product.customizable).slice(0, 8);
 
@@ -49,7 +58,6 @@ export default function HomePage() {
         href="/categoria/personalizaveis"
       />
       <Reviews />
-      <HowToBuyBento />
       <FAQ />
       <Newsletter />
     </>

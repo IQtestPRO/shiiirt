@@ -100,11 +100,11 @@ export function HowToBuyBento() {
     <section className="bg-brand-ink text-brand-paper">
       <div className="container-wide py-16 md:py-24">
         <header className="mx-auto max-w-2xl text-center">
-          <p className="text-[10px] font-bold uppercase tracking-[0.36em] text-brand-yellow">Passo a passo</p>
-          <h2 className="font-poppins balance mt-3 text-[clamp(2rem,4.2vw,3.4rem)] font-extrabold leading-[1.0] tracking-[-0.03em]">
+          <p className="font-lato text-[10px] font-bold uppercase tracking-[0.36em] text-brand-yellow">Passo a passo</p>
+          <h2 className="font-bebas balance mt-3 text-[clamp(2.4rem,5.4vw,4.4rem)] uppercase leading-[0.95] tracking-[0.005em]">
             Como comprar no Mundo das Importadas
           </h2>
-          <p className="pretty mt-4 text-[15px] font-medium leading-7 text-brand-paper/65 sm:text-base">
+          <p className="font-lato pretty mt-4 text-[15px] font-medium leading-7 text-brand-paper/65 sm:text-base">
             Escolha sua camisa, personalize do seu jeito, pague com segurança e acompanhe até chegar na sua casa.
           </p>
         </header>

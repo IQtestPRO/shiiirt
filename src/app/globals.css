@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Bebas+Neue&family=Lato:wght@300;400;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -106,6 +106,15 @@ textarea:focus-visible {
 
 .font-poppins {
   font-family: Poppins, Onest, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", "Bricolage Grotesque", Impact, "Arial Narrow", system-ui, sans-serif;
+  font-feature-settings: "ss01";
+}
+
+.font-lato {
+  font-family: Lato, Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 }
 
 .tabular {
